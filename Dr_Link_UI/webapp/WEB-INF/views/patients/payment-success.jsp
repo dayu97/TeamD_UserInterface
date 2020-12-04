@@ -30,8 +30,6 @@ body {
     font-family: "Nanum Gothic", sans-serif;
 }
 
-
-
 .footer-menu{
 	color:#fff;
 }
