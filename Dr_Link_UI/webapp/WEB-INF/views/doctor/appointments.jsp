@@ -9,22 +9,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="resources/img/favicon.png" rel="icon">
+		<link href="${pageContext.request.contextPath}/resources/img/favicon.png" rel="icon">
 		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/all.min.css">
 		
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/js/html5shiv.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/js/respond.min.js"></script>
 		<![endif]-->
 	
 	</head>
@@ -45,13 +45,13 @@
 							</span>
 						</a>
 						<a href="index" class="navbar-brand logo">
-							<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
+							<img src="${pageContext.request.contextPath}/resources/img/logo.png" class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
 							<a href="index" class="menu-logo">
-								<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
+								<img src="${pageContext.request.contextPath}/resources/img/logo.png" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>
@@ -175,13 +175,13 @@
 						<li class="nav-item dropdown has-arrow logged-item">
 							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 								<span class="user-img">
-									<img class="rounded-circle" src="resources/img/doctors/doctor-thumb-02.jpg" width="31" alt="Darren Elder">
+									<img class="rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" width="31" alt="Darren Elder">
 								</span>
 							</a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="user-header">
 									<div class="avatar avatar-sm">
-										<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+										<img src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
 									</div>
 									<div class="user-text">
 										<h6>Darren Elder</h6>
@@ -230,7 +230,7 @@
 								<div class="widget-profile pro-widget-content">
 									<div class="profile-info-widget">
 										<a href="#" class="booking-doc-img">
-											<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3>김성민 의사</h3>
@@ -314,7 +314,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile.jsp">고현영</a></h3>
@@ -344,7 +344,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient1.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient1.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">신주섭 </a></h3>
@@ -374,7 +374,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient2.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient2.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Travis Trimble</a></h3>
@@ -406,7 +406,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient3.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient3.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Carl Kelly</a></h3>
@@ -436,7 +436,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient4.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient4.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Michelle Fairfax</a></h3>
@@ -466,7 +466,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient5.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient5.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Gina Moore</a></h3>
@@ -496,7 +496,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient6.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient6.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Elsie Gilley</a></h3>
@@ -526,7 +526,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient7.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient7.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Joan Gardner</a></h3>
@@ -556,7 +556,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient8.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient8.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Daniel Griffing</a></h3>
@@ -586,7 +586,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient9.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient9.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Walter Roberson</a></h3>
@@ -616,7 +616,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient10.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient10.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Robert Rhodes</a></h3>
@@ -646,7 +646,7 @@
 								<div class="appointment-list">
 									<div class="profile-info-widget">
 										<a href="patient-profile" class="booking-doc-img">
-											<img src="resources/img/patients/patient11.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/patients/patient11.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
 											<h3><a href="patient-profile">Harry Williams</a></h3>
@@ -693,7 +693,7 @@
 								<!-- Footer Widget -->
 								<div class="footer-widget footer-about">
 									<div class="footer-logo">
-										<img src="resources/img/footer-logo.png" alt="logo">
+										<img src="${pageContext.request.contextPath}/resources/img/footer-logo.png" alt="logo">
 									</div>
 									<div class="footer-about-content">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -870,18 +870,18 @@
 		<!-- /Appointment Details Modal -->
 	  
 		<!-- jQuery -->
-		<script src="resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="resources/js/popper.min.js"></script>
-		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 		
 		<!-- Sticky Sidebar JS -->
-        <script src="resources/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
-        <script src="resources/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
 		
 		<!-- Custom JS -->
-		<script src="resources/js/script.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 		
 	</body>
 </html>
