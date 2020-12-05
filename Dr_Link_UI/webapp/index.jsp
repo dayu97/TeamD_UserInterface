@@ -116,7 +116,7 @@ width:auto !important;
 						<a href="faq">FAQ</a>
 					</li>
 					<li class="has-submenu">
-						<a href="appointment">온라인예약</a>
+						<a href="booking">온라인예약</a>
 					</li>
 					<li class="has-submenu">
 						<a href="">온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
@@ -335,7 +335,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -371,7 +371,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -407,7 +407,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -443,7 +443,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -479,7 +479,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -515,7 +515,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -551,7 +551,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -587,7 +587,7 @@ width:auto !important;
 											<a href="doctor-profile" class="btn view-btn">상세보기</a>
 										</div>
 										<div class="col-6">
-											<a href="appointment" class="btn book-btn">예약하기</a>
+											<a href="booking" class="btn book-btn">예약하기</a>
 										</div>
 									</div>
 								</div>
@@ -775,7 +775,7 @@ width:auto !important;
 						<!-- Footer Widget -->
 						<div class="footer-widget footer-menu">
 							<h2 class="footer-title"><a href="notice" class="footer-menu">공지사항</a></h2>
-							<h2 class="footer-title"><a href="appointment" class="footer-menu">온라인 예약</a></h2>
+							<h2 class="footer-title"><a href="booking" class="footer-menu">온라인 예약</a></h2>
 							<h2 class="footer-title"><a href="health-care" class="footer-menu">건강정보</a></h2>
 						</div>
 						<!-- /Footer Widget -->

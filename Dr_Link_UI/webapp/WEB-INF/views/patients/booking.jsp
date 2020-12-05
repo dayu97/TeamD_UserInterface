@@ -23,11 +23,22 @@
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="resources/css/style.css">
 		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
-		<![endif]-->
+		<!-- 구글폰트 -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+
+.footer-menu{
+	color:#fff;
+}
+
+</style>
 	
 	</head>
 	<body>
@@ -493,143 +504,131 @@
 			<!-- /Page Content -->
    
 			<!-- Footer -->
-			<footer class="footer">
-				
-				<!-- Footer Top -->
-				<div class="footer-top">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-about">
-									<div class="footer-logo">
-										<img src="resources/img/footer-logo.png" alt="logo">
-									</div>
-									<div class="footer-about-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-										<div class="social-icon">
-											<ul>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-												</li>
-												<li>
-													<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-menu">
-									<h2 class="footer-title">For Patients</h2>
-									<ul>
-										<li><a href="search">Search for Doctors</a></li>
-										<li><a href="login">Login</a></li>
-										<li><a href="register">Register</a></li>
-										<li><a href="booking">Booking</a></li>
-										<li><a href="patient-dashboard">Patient Dashboard</a></li>
-									</ul>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-menu">
-									<h2 class="footer-title">For Doctors</h2>
-									<ul>
-										<li><a href="appointments">Appointments</a></li>
-										<li><a href="chat">Chat</a></li>
-										<li><a href="login">Login</a></li>
-										<li><a href="doctor-register">Register</a></li>
-										<li><a href="doctor-dashboard">Doctor Dashboard</a></li>
-									</ul>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-							<div class="col-lg-3 col-md-6">
-							
-								<!-- Footer Widget -->
-								<div class="footer-widget footer-contact">
-									<h2 class="footer-title">Contact Us</h2>
-									<div class="footer-contact-info">
-										<div class="footer-address">
-											<span><i class="fas fa-map-marker-alt"></i></span>
-											<p> 3556  Beech Street, San Francisco,<br> California, CA 94108 </p>
-										</div>
-										<p>
-											<i class="fas fa-phone-alt"></i>
-											+1 315 369 5943
-										</p>
-										<p class="mb-0">
-											<i class="fas fa-envelope"></i>
-											doccure@example.com
-										</p>
-									</div>
-								</div>
-								<!-- /Footer Widget -->
-								
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<!-- /Footer Top -->
-				
-				<!-- Footer Bottom -->
-                <div class="footer-bottom">
-					<div class="container-fluid">
+	<footer class="footer">
+		
+		<!-- Footer Top -->
+		<div class="footer-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
 					
-						<!-- Copyright -->
-						<div class="copyright">
-							<div class="row">
-								<div class="col-md-6 col-lg-6">
-									<div class="copyright-text">
-										<p class="mb-0">&copy; 2020 Doccure. All rights reserved.</p>
-									</div>
-								</div>
-								<div class="col-md-6 col-lg-6">
-								
-									<!-- Copyright Menu -->
-									<div class="copyright-menu">
-										<ul class="policy-menu">
-											<li><a href="term-condition">Terms and Conditions</a></li>
-											<li><a href="privacy-policy">Policy</a></li>
-										</ul>
-									</div>
-									<!-- /Copyright Menu -->
-									
+						<!-- Footer Widget -->
+						<div class="footer-widget footer-about">
+							<div class="footer-logo">
+								<h1 id="drlink" style="color:#fff;">Dr.Link</h1>
+							</div>
+							<div class="footer-about-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+								<div class="social-icon">
+									<ul>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+										</li>
+										<li>
+											<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- /Copyright -->
+						<!-- /Footer Widget -->
 						
 					</div>
+					
+					<div class="col-lg-3 col-md-6">
+					
+						<!-- Footer Widget -->
+						<div class="footer-widget footer-menu">
+							<h2 class="footer-title"><a href="notice" class="footer-menu">공지사항</a></h2>
+							<h2 class="footer-title"><a href="booking" class="footer-menu">온라인 예약</a></h2>
+							<h2 class="footer-title"><a href="health-care" class="footer-menu">건강정보</a></h2>
+						</div>
+						<!-- /Footer Widget -->
+						
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+					
+						<!-- Footer Widget -->
+						<div class="footer-widget footer-menu">
+							<h2 class="footer-title"><a href="" class="footer-menu">온라인 간편 진단</a></h2>
+							<ul>
+								<li><a href="AI_medical_eye">안과 진단</a></li>
+								<li><a href="AI_medical_skin">피부과 진단</a></li>
+							</ul>
+						</div>
+						<!-- /Footer Widget -->
+						
+					</div>
+					
+					<div class="col-lg-3 col-md-6">
+					
+						<!-- Footer Widget -->
+						<div class="footer-widget footer-contact">
+								<h2 class="footer-title">Contact Us</h2>
+								<div class="footer-contact-info">
+									<div class="footer-address">
+										<span><i class="fas fa-map-marker-alt"></i></span>
+										<p> 서울 금천구 가산디지털2로 123 월드메르디앙벤처센터II </p>
+									</div>
+									<p>
+										<i class="fas fa-phone-alt"></i>
+										02-2025-4119
+									</p>
+									<p class="mb-0">
+										<i class="fas fa-envelope"></i>
+										drlink@naver.com
+									</p>
+								</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Footer Widget -->
+						
+					</div>
+					
 				</div>
-				<!-- /Footer Bottom -->
+			</div>
+		</div>
+		<!-- /Footer Top -->
+		
+		<!-- Footer Bottom -->
+              <div class="footer-bottom" style="margin:5px !important; padding:10px !important;">
+			<div class="container-fluid">
+			
+				<!-- Copyright -->
+				<div class="copyright">
+					<div class="row">
+						<div class="col-md-7 col-lg-7">
+							<div class="copyright-text">
+								<p>
+									Copyright &copy; by Dr.Link All Rights Reserved.
+								</p>
+							</div>
+						</div>
+						
+							<!-- /Copyright Menu -->
+							
+						</div>
+					</div>
+				</div>
+				<!-- /Copyright -->
 				
-			</footer>
-			<!-- /Footer -->
+			</div>
+		</div>
+		<!-- /Footer Bottom -->
+		
+	</footer>
+	<!-- /Footer -->
 		   
 		</div>
 		<!-- /Main Wrapper -->

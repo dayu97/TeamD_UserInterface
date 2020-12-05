@@ -19,10 +19,16 @@
 		<!-- Main CSS -->
         <link rel="stylesheet" href="resources/css/style.css">
 		
-		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
-		<![endif]-->
+		<!-- 구글폰트 -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+</style>
     </head>
     <body>
 	

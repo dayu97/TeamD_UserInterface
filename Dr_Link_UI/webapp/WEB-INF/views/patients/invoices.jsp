@@ -61,6 +61,12 @@ width:auto !important;
 width:auto !important;
 }
 
+
+
+.footer-menu{
+	color:#fff;
+}
+
 </style>
 
 	</head>
