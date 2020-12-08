@@ -27,6 +27,13 @@ public class MainController {
 		System.out.println("페이지이동");
 		return "doctor/appointments"; 
 	}
+
+
+	@RequestMapping(value = "booking")
+	public String booking() {
+		System.out.println("patients 컨트롤러 요청");
+		return "patients/booking";
+	}
 	
 	
 }

@@ -110,7 +110,7 @@ body {
 									<li><a href="search">Search Doctor</a></li>
 									<li><a href="doctor-profile">Doctor Profile</a></li>
 									<li class="active"><a href="booking">Booking</a></li>
-									<li><a href="checkout">Checkout</a></li>
+									<li><a href="payment">payment</a></li>
 									<li><a href="booking-success">Booking Success</a></li>
 									<li><a href="patient-dashboard">Patient Dashboard</a></li>
 									<li><a href="favourites">Favourites</a></li>
@@ -128,7 +128,7 @@ body {
 									<li><a href="product-all">Product</a></li>
 									<li><a href="product-description">Product Description</a></li>
 									<li><a href="cart">Cart</a></li>
-									<li><a href="product-checkout">Product Checkout</a></li>
+									<li><a href="product-payment">Product payment</a></li>
 									<li><a href="payment-success">Payment Success</a></li>
 								</ul>
 							</li>
@@ -492,7 +492,7 @@ body {
 							
 							<!-- Submit Section -->
 							<div class="submit-section proceed-btn text-right">
-								<a href="checkout" class="btn btn-primary submit-btn">결제하기</a>
+								<a href="payment" class="btn btn-primary submit-btn">결제하기</a>
 							</div>
 							<!-- /Submit Section -->
 							
