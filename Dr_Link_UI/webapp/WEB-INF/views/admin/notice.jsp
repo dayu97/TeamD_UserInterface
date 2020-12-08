@@ -325,13 +325,13 @@
                                     <div class="col">
                                         <ul class="nav nav-tabs nav-tabs-solid">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="notice.jsp">공지사항/병원소식</a>
+                                                <a class="nav-link active" href="notice">공지사항/병원소식</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="health-info.jsp">건강정보</a>
+                                                <a class="nav-link" href="health-info">건강정보</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="question.jsp">자주하는질문</a>
+                                                <a class="nav-link active" href="question">자주하는질문</a>
                                             </li>
                                         </ul>
                                     </div>
