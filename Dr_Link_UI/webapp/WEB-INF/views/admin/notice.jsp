@@ -217,10 +217,10 @@
 							<li class="submenu">
 								<a href="#"><i class="fe fe-document"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="blog.jsp" class="active"> Blog </a></li>
-									<li><a href="blog-details.jsp"> Blog Details</a></li>
-									<li><a href="add-blog.jsp"> Add Blog </a></li>
-									<li><a href="edit-blog.jsp"> Edit Blog </a></li>
+									<li><a href="blog" class="active"> Blog </a></li>
+									<li><a href="blog-details"> Blog Details</a></li>
+									<li><a href="add-blog"> Add Blog </a></li>
+									<li><a href="edit-blog"> Edit Blog </a></li>
 								</ul>
 							</li>
 							<li><a href="product-list"><i class="fe fe-layout"></i> <span>Product List</span></a></li>
@@ -336,7 +336,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="btn btn-primary btn-sm" href="add-blog.jsp"><i class="fas fa-plus mr-1"></i> 게시글 추가</a>
+                                        <a class="btn btn-primary btn-sm" href="add-blog"><i class="fas fa-plus mr-1"></i> 게시글 추가</a>
                                     </div>
                                 </div>
 							
@@ -363,7 +363,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -391,7 +391,7 @@
 												<p class="mb-0">코로나19검사 시행 안내</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -419,7 +419,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -447,7 +447,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -475,7 +475,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -503,7 +503,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -531,7 +531,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -559,7 +559,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
@@ -587,7 +587,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
@@ -615,7 +615,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
