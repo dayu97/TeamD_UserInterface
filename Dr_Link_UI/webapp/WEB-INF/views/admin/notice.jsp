@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>관리자게시글추가 - Dr.Link</title>
+        <title>공지게시판관리 - Dr.Link</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="resources/admin/img/favicon.png">
@@ -217,9 +217,9 @@
 							<li class="submenu">
 								<a href="#"><i class="fe fe-document"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="notice.jsp"> Blog </a></li>
+									<li><a href="blog.jsp" class="active"> Blog </a></li>
 									<li><a href="blog-details.jsp"> Blog Details</a></li>
-									<li><a href="add-blog.jsp" class="active"> Add Blog </a></li>
+									<li><a href="add-blog.jsp"> Add Blog </a></li>
 									<li><a href="edit-blog.jsp"> Edit Blog </a></li>
 								</ul>
 							</li>
@@ -307,11 +307,11 @@
 					<div class="page-header">
 						<div class="row">
 							<div class="col-sm-12">
-								<h3 class="page-title">게시글 추가</h3>
+								<h3 class="page-title">게시판 관리</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Dashboard</a></li>
-									<li class="breadcrumb-item"><a href="javascript:(0);">페이지</a></li>
-									<li class="breadcrumb-item active">게시글 추가</li>
+									<li class="breadcrumb-item"><a href="javascript:(0);">게시판</a></li>
+									<li class="breadcrumb-item active">게시판 관리</li>
 								</ul>
 							</div>
 						</div>
@@ -320,156 +320,339 @@
 					
 					<div class="row">
 						<div class="col-sm-12">
-							<div class="card">
-								<div class="card-body custom-edit-service">
 									
-									<!--<div class="row mb-5">
-                                     <div class="col">
+								<div class="row mb-5">
+                                    <div class="col">
                                         <ul class="nav nav-tabs nav-tabs-solid">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="blog">공지사항/병원소식</a>
+                                                <a class="nav-link active" href="notice.jsp">공지사항/병원소식</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="pending-blog">건강정보</a>
+                                                <a class="nav-link" href="health-info.jsp">건강정보</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="blog">자주하는질문</a>
+                                                <a class="nav-link active" href="question.jsp">자주하는질문</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="btn btn-primary btn-sm" href="add-blog"><i class="fas fa-plus mr-1"></i>게시글 추가</a>
-                                    </div> 
-                                </div>-->
+                                        <a class="btn btn-primary btn-sm" href="add-blog.jsp"><i class="fas fa-plus mr-1"></i> 게시글 추가</a>
+                                    </div>
+                                </div>
 							
-								<!-- Add Blog -->
-								<form method="post" enctype="multipart/form-data" autocomplete="off" id="update_service" action="blog">
-									<input type="hidden" name="csrf_token_name" value="0146f123a4c7ae94253b39bca6bd5a5e">
+								<!-- Blog -->
+								<div class="row blog-grid-row">
 
-									<div class="service-fields mb-3">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="form-group">
-													<label>제목 <span class="text-danger">*</span></label>
-													<input type="hidden" name="service_id" id="service_id" value="18">
-													<input class="form-control" type="text" name="service_title" id="제목을 입력하세요" required="">
-												</div>
-											</div>
-										</div>
-									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
 									
-									<div class="service-fields mb-3">
-										<div class="row">
-											<div class="col-lg-6">
-												<div class="form-group">
-													<label>카테고리 선택<span class="text-danger">*</span></label>
-													<select class="form-control" name="category" required=""> 
-														<option value="1">공지사항</option>
-														<option value="2" selected="selected">건강정보</option>
-														<option value="3">자주하는질문</option>
-														<option value="4">Cleaning</option>
-														<!-- <option value="5">Electrical</option>
-														<option value="6">Carpentry</option>
-														<option value="7">Computer</option>
-														<option value="8">Painting</option>
-														<option value="9">Car Wash</option>
-														<option value="10">Category Test</option>
-														<option value="11">dfdf</option>
-														<option value="12">Equipment</option>
-														<option value="13">Test category1</option>
-														<option value="14">Farming</option>
-														<option value="15">Test Category02</option>
-														<option value="16">Laundry</option> -->
-													</select>
-												</div>
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-01.jpg" alt="Post Image"></a>
 											</div>
-											<div class="col-lg-6">
-												<div class="form-group">
-													<label>분야 선택 <span class="text-danger">*</span></label>
-													<select class="form-control" name="subcategory"> 
-													<option value="5">공지사항</option>
-													<option value="6">병원소식</option>
-													<option value="7">피부과</option>
-													<option value="8">안과</option>
-													<option value="9">정신건강의학과</option>
-													<option value="10">원무관련</option>
-													<option value="11">진료관련</option>
-													<option value="12">홈페이지 이용</option>
-													<!-- <option value="13">Full Car Wash</option>
-													<option value="14" selected="selected">Testing category</option>
-													<option value="15">Test Sub category</option>
-													<option value="16">Harvesting pine</option>
-													<option value="17">Test Sub category name</option>
-													<option value="18">Test Sub category name</option> -->
-												</select>
-												</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-01.jpg" alt="Post Author"> <span>관리자</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">2020년 12월 병원 휴진 안내</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
 										</div>
+										<!-- /Blog Post -->
+										
 									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
 									
-									<div class="service-fields mb-3">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="form-group">
-													<label>내용 <span class="text-danger">*</span></label>
-													<textarea id="about" class="form-control service-desc" name="about"></textarea>
-												</div>
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-02.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-02.jpg" alt="Post Author"> <span>관리자</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-15</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">코로나19검사 시행 안내</a></h3>
+												<p class="mb-0">코로나19검사 시행 안내</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
 										</div>
+										<!-- /Blog Post -->
+										
 									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
 									
-									<div class="service-fields mb-3">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="service-upload">
-													<i class="fas fa-cloud-upload-alt"></i>
-													<span>이미지 첨부 *</span>
-													<input type="file" name="images[]" id="images" multiple="" accept="image/jpeg, image/png, image/gif,">
-												
-												</div>	
-												<div id="uploadPreview">
-													<ul class="upload-wrap">
-														<li>
-															<div class=" upload-images">
-																<img alt="Blog Image" src="resources/admin/img/profiles/avatar-17.jpg">
-															</div>
-														</li>
-														<li>
-															<div class=" upload-images">
-																<img alt="Blog Image" src="resources/admin/img/profiles/avatar-17.jpg">
-															</div>
-														</li>
-														<li>
-															<div class=" upload-images">
-																<img alt="Blog Image" src="resources/admin/img/profiles/avatar-17.jpg">
-															</div>
-														</li>
-													</ul>
-												</div>
-												
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-03.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-03.jpg" alt="Post Author"> <span>관리자</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">2020년 12월 병원 휴진 안내</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
 										</div>
+										<!-- /Blog Post -->
+										
 									</div>
-									<div class="service-fields mb-3">
-										<div class="row">
-											<div class="col-lg-12">
-												<div class="form-group">
-													<label>비밀번호 <span class="text-danger">*</span></label>
-													<input type="hidden" name="video_id" id="video_id" value="18">
-													<input class="form-control" type="password" name="video_id" id="video_id" value="*****" required="">
-												</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-04.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-04.jpg" alt="Post Author"> <span>Dr. Sofia Brient</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">2020년 12월 병원 휴진 안내</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
 										</div>
+										<!-- /Blog Post -->
+										
 									</div>
-									<div class="submit-section">
-										<button class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">저장</button>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-05.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-05.jpg" alt="Post Author"> <span>관리자</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">진료과 개설</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
 									</div>
-								</form>
-								<!-- /Add Blog -->
-
-
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-06.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-06.jpg" alt="Post Author"> <span>관리자</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">2020년 12월 병원 휴진 안내</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
+									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-07.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-07.jpg" alt="Post Author"> <span>Dr. Linda Tobin</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 2020-11-30</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">2020년 12월 병원 휴진 안내</a></h3>
+												<p class="mb-0">병원 휴진 안내 사항</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
+									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-08.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-08.jpg" alt="Post Author"> <span>Dr. Paul Richard </span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 25 Nov 2019</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">Simple steps to visit your doctor today</a></h3>
+												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
+									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-09.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-09.jpg" alt="Post Author"> <span>Dr. John Gibbs</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 24 Nov 2019</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">5 Great reasons to use an Online Doctor</a></h3>
+												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
+									</div>
+									<div class="col-md-6 col-xl-4 col-sm-12">
+									
+										<!-- Blog Post -->
+										<div class="blog grid-blog">
+											<div class="blog-image">
+												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-10.jpg" alt="Post Image"></a>
+											</div>
+											<div class="blog-content">
+												<ul class="entry-meta meta-item">
+													<li>
+														<div class="post-author">
+															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-10.jpg" alt="Post Author"> <span>Dr. Olga Barlow</span></a>
+														</div>
+													</li>
+													<li><i class="far fa-clock"></i> 23 Nov 2019</li>
+												</ul>
+												<h3 class="blog-title"><a href="#">Online Doctoral Programs</a></h3>
+												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
+											</div>
+											<div class="row pt-3">
+												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+																											
+												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
+											</div>
+										</div>
+										<!-- /Blog Post -->
+										
+									</div>
 								</div>
-							</div>
+							
+								<!-- Blog Pagination -->
+								<div class="row">
+									<div class="col-md-12">
+										<div class="blog-pagination">
+											<nav>
+												<ul class="pagination justify-content-center">
+													<li class="page-item disabled">
+														<a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-double-left"></i></a>
+													</li>
+													<li class="page-item">
+														<a class="page-link" href="#">1</a>
+													</li>
+													<li class="page-item active">
+														<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+													</li>
+													<li class="page-item">
+														<a class="page-link" href="#">3</a>
+													</li>
+													<li class="page-item">
+														<a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+									</div>
+								</div>
+								<!-- /Blog Pagination -->
+								<!-- /Blog -->
 						</div>			
 					</div>
 					
@@ -487,7 +670,7 @@
 					<div class="modal-header">
 						<h5 class="modal-title" id="acc_title"></h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">�</span>
+							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">
@@ -506,7 +689,7 @@
 					<div class="modal-header">
 						<h5 class="modal-title" id="acc_title">Inactive Service?</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">�</span>
+							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">

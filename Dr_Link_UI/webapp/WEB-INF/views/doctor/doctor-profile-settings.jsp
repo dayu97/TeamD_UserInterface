@@ -5,7 +5,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Doccure</title>
+		<title>의사마이페이지 - Dr.Link</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -216,10 +216,10 @@
 							<nav aria-label="breadcrumb" class="page-breadcrumb">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+									<li class="breadcrumb-item active" aria-current="page">프로필 수정</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">Profile Settings</h2>
+							<h2 class="breadcrumb-title">마이페이지</h2>
 						</div>
 					</div>
 				</div>
@@ -241,10 +241,10 @@
 											<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3>Dr. Darren Elder</h3>
+											<h3>김성민 의사</h3>
 											
 											<div class="patient-details">
-												<h5 class="mb-0">BDS, MDS - Oral & Maxillofacial Surgery</h5>
+												<h5 class="mb-0">정신건강의학과</h5>
 											</div>
 										</div>
 									</div>
@@ -261,19 +261,19 @@
 											<li>
 												<a href="appointments">
 													<i class="fas fa-calendar-check"></i>
-													<span>Appointments</span>
+													<span>진료일정</span>
 												</a>
 											</li>
 											<li>
 												<a href="my-patients">
 													<i class="fas fa-user-injured"></i>
-													<span>My Patients</span>
+													<span>환자내역</span>
 												</a>
 											</li>
 											<li>
 												<a href="schedule-timings">
 													<i class="fas fa-hourglass-start"></i>
-													<span>Schedule Timings</span>
+													<span>근무시간</span>
 												</a>
 											</li>
 											<li>
@@ -285,38 +285,26 @@
 											<li>
 												<a href="reviews">
 													<i class="fas fa-star"></i>
-													<span>Reviews</span>
+													<span>리뷰</span>
 												</a>
 											</li>
 											<li>
 												<a href="chat-doctor">
 													<i class="fas fa-comments"></i>
-													<span>Message</span>
+													<span>메세지</span>
 													<small class="unread-msg">23</small>
 												</a>
 											</li>
 											<li class="active">
 												<a href="doctor-profile-settings">
 													<i class="fas fa-user-cog"></i>
-													<span>Profile Settings</span>
-												</a>
-											</li>
-											<li>
-												<a href="social-media">
-													<i class="fas fa-share-alt"></i>
-													<span>Social Media</span>
-												</a>
-											</li>
-											<li>
-												<a href="doctor-change-password">
-													<i class="fas fa-lock"></i>
-													<span>Change Password</span>
+													<span>프로필수정</span>
 												</a>
 											</li>
 											<li>
 												<a href="index">
 													<i class="fas fa-sign-out-alt"></i>
-													<span>Logout</span>
+													<span>로그아웃</span>
 												</a>
 											</li>
 										</ul>
@@ -331,7 +319,7 @@
 							<!-- Basic Information -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Basic Information</h4>
+									<h4 class="card-title">기본 정보</h4>
 									<div class="row form-row">
 										<div class="col-md-12">
 											<div class="form-group">
@@ -341,57 +329,57 @@
 													</div>
 													<div class="upload-img">
 														<div class="change-photo-btn">
-															<span><i class="fa fa-upload"></i> Upload Photo</span>
+															<span><i class="fa fa-upload"></i> 사진 첨부</span>
 															<input type="file" class="upload">
 														</div>
-														<small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+														<small class="form-text text-muted">JPG, GIF, PNG만 허용됩니다. 최대 사이즈 2MB</small>
 													</div>
 												</div>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Username <span class="text-danger">*</span></label>
-												<input type="text" class="form-control" readonly>
+												<label>아이디 <span class="text-danger">*</span></label>
+												<input type="text" class="form-control" readonly value="doctor123">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
 												<label>Email <span class="text-danger">*</span></label>
-												<input type="email" class="form-control" readonly>
+												<input type="email" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>First Name <span class="text-danger">*</span></label>
+												<label>성 <span class="text-danger">*</span></label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Last Name <span class="text-danger">*</span></label>
+												<label>이름<span class="text-danger">*</span></label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Phone Number</label>
+												<label>휴대폰</label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Gender</label>
+												<label>성별</label>
 												<select class="form-control select">
 													<option>Select</option>
-													<option>Male</option>
-													<option>Female</option>
+													<option>남성</option>
+													<option>여성</option>
 												</select>
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group mb-0">
-												<label>Date of Birth</label>
+												<label>생년월일</label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
@@ -403,9 +391,9 @@
 							<!-- About Me -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">About Me</h4>
+									<h4 class="card-title">경력사항</h4>
 									<div class="form-group mb-0">
-										<label>Biography</label>
+										<label>자기소개</label>
 										<textarea class="form-control" rows="5"></textarea>
 									</div>
 								</div>
@@ -415,23 +403,23 @@
 							<!-- Clinic Info -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Clinic Info</h4>
+									<h4 class="card-title">병원 정보</h4>
 									<div class="row form-row">
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Clinic Name</label>
+												<label>병원 이름</label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-6">
 											<div class="form-group">
-												<label>Clinic Address</label>
+												<label>병원 주소</label>
 												<input type="text" class="form-control">
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<label>Clinic Images</label>
+												<label>병원 사진</label>
 												<form action="#" class="dropzone"></form>
 											</div>
 											<div class="upload-wrap">
@@ -450,7 +438,7 @@
 							</div>
 							<!-- /Clinic Info -->
 
-							<!-- Contact Details -->
+							<!-- Contact Details
 							<div class="card contact-card">
 								<div class="card-body">
 									<h4 class="card-title">Contact Details</h4>
@@ -495,22 +483,22 @@
 									</div>
 								</div>
 							</div>
-							<!-- /Contact Details -->
+							 /Contact Details -->
 							
 							<!-- Pricing -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Pricing</h4>
+									<h4 class="card-title">가격</h4>
 									
 									<div class="form-group mb-0">
 										<div id="pricing_select">
 											<div class="custom-control custom-radio custom-control-inline">
 												<input type="radio" id="price_free" name="rating_option" class="custom-control-input" value="price_free" checked>
-												<label class="custom-control-label" for="price_free">Free</label>
+												<label class="custom-control-label" for="price_free">무료</label>
 											</div>
 											<div class="custom-control custom-radio custom-control-inline">
 												<input type="radio" id="price_custom" name="rating_option" value="custom_price" class="custom-control-input">
-												<label class="custom-control-label" for="price_custom">Custom Price (per hour)</label>
+												<label class="custom-control-label" for="price_custom">유료 (시간별)</label>
 											</div>
 										</div>
 
@@ -530,16 +518,16 @@
 							<!-- Services and Specialization -->
 							<div class="card services-card">
 								<div class="card-body">
-									<h4 class="card-title">Services and Specialization</h4>
+									<h4 class="card-title">진료과목</h4>
 									<div class="form-group">
-										<label>Services</label>
-										<input type="text" data-role="tagsinput" class="input-tags form-control" placeholder="Enter Services" name="services" value="Tooth cleaning " id="services">
-										<small class="form-text text-muted">Note : Type & Press enter to add new services</small>
+										<label>진료과</label>
+										<input type="text" data-role="tagsinput" class="input-tags form-control" placeholder="진료과를 입력하세요." name="services" value="정신건강의학과" id="services">
+										<small class="form-text text-muted">알림 : 새로운 진료과목을 추가하시려면 엔터를 누르세요.</small>
 									</div> 
 									<div class="form-group mb-0">
-										<label>Specialization </label>
-										<input class="input-tags form-control" type="text" data-role="tagsinput" placeholder="Enter Specialization" name="specialist" value="Children Care,Dental Care" id="specialist">
-										<small class="form-text text-muted">Note : Type & Press  enter to add new specialization</small>
+										<label>전문진료분야 </label>
+										<input class="input-tags form-control" type="text" data-role="tagsinput" placeholder="진료분야를 입력하세요." name="specialist" value="성인 심리,불안 장애" id="specialist">
+										<small class="form-text text-muted">알림 : 새로운 진료과목을 추가하시려면 엔터를 누르세요.</small>
 									</div> 
 								</div>              
 							</div>
@@ -548,26 +536,26 @@
 							<!-- Education -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Education</h4>
+									<h4 class="card-title">학력</h4>
 									<div class="education-info">
 										<div class="row form-row education-cont">
 											<div class="col-12 col-md-10 col-lg-11">
 												<div class="row form-row">
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>Degree</label>
+															<label>졸업여부</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>College/Institute</label>
+															<label>출신대학</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>Year of Completion</label>
+															<label>졸업년도</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
@@ -576,7 +564,7 @@
 										</div>
 									</div>
 									<div class="add-more">
-										<a href="javascript:void(0);" class="add-education"><i class="fa fa-plus-circle"></i> Add More</a>
+										<a href="javascript:void(0);" class="add-education"><i class="fa fa-plus-circle"></i> 추가하기</a>
 									</div>
 								</div>
 							</div>
@@ -585,32 +573,26 @@
 							<!-- Experience -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Experience</h4>
+									<h4 class="card-title">경력</h4>
 									<div class="experience-info">
 										<div class="row form-row experience-cont">
 											<div class="col-12 col-md-10 col-lg-11">
 												<div class="row form-row">
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>Hospital Name</label>
+															<label>병원이름</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>From</label>
+															<label>활동년도</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
 													<div class="col-12 col-md-6 col-lg-4">
 														<div class="form-group">
-															<label>To</label>
-															<input type="text" class="form-control">
-														</div> 
-													</div>
-													<div class="col-12 col-md-6 col-lg-4">
-														<div class="form-group">
-															<label>Designation</label>
+															<label>직함</label>
 															<input type="text" class="form-control">
 														</div> 
 													</div>
@@ -628,18 +610,18 @@
 							<!-- Awards -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Awards</h4>
+									<h4 class="card-title">수상내역</h4>
 									<div class="awards-info">
 										<div class="row form-row awards-cont">
 											<div class="col-12 col-md-5">
 												<div class="form-group">
-													<label>Awards</label>
+													<label>수상명</label>
 													<input type="text" class="form-control">
 												</div> 
 											</div>
 											<div class="col-12 col-md-5">
 												<div class="form-group">
-													<label>Year</label>
+													<label>수상년도</label>
 													<input type="text" class="form-control">
 												</div> 
 											</div>
@@ -652,7 +634,7 @@
 							</div>
 							<!-- /Awards -->
 							
-							<!-- Memberships -->
+							<!-- Memberships
 							<div class="card">
 								<div class="card-body">
 									<h4 class="card-title">Memberships</h4>
@@ -676,18 +658,18 @@
 							<!-- Registrations -->
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Registrations</h4>
+									<h4 class="card-title">면허내역</h4>
 									<div class="registrations-info">
 										<div class="row form-row reg-cont">
 											<div class="col-12 col-md-5">
 												<div class="form-group">
-													<label>Registrations</label>
+													<label>면허번호</label>
 													<input type="text" class="form-control">
 												</div> 
 											</div>
 											<div class="col-12 col-md-5">
 												<div class="form-group">
-													<label>Year</label>
+													<label>취득년도</label>
 													<input type="text" class="form-control">
 												</div> 
 											</div>
@@ -700,8 +682,33 @@
 							</div>
 							<!-- /Registrations -->
 							
+							<!-- password -->
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">비밀번호 변경</h4>
+									<div class="registrations-info">
+										<div class="row form-row reg-cont">
+											<div class="col-12 col-md-5">
+												<div class="form-group">
+													<label>현재비밀번호</label>
+													<input type="password" class="form-control">
+												</div> 
+											</div>
+											<div class="col-12 col-md-5">
+												<div class="form-group">
+													<label>변경비밀번호</label>
+													<input type="password" class="form-control">
+												</div> 
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<!-- /password -->
+							
 							<div class="submit-section submit-btn-bottom">
-								<button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+								<button type="submit" class="btn btn-primary submit-btn">변경 저장하기</button>
 							</div>
 							
 						</div>

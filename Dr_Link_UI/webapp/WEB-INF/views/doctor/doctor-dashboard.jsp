@@ -5,7 +5,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Doccure</title>
+		<title>의사대쉬보드 - Dr.Link</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -211,7 +211,7 @@
 									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">Dashboard</h2>
+							<h2 class="breadcrumb-title">대쉬보드</h2>
 						</div>
 					</div>
 				</div>
@@ -233,10 +233,10 @@
 											<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3>Dr. Darren Elder</h3>
+											<h3>김성민 의사</h3>
 											
 											<div class="patient-details">
-												<h5 class="mb-0">BDS, MDS - Oral & Maxillofacial Surgery</h5>
+												<h5 class="mb-0">정신건강의학과</h5>
 											</div>
 										</div>
 									</div>
@@ -253,19 +253,19 @@
 											<li>
 												<a href="appointments">
 													<i class="fas fa-calendar-check"></i>
-													<span>Appointments</span>
+													<span>진료일정</span>
 												</a>
 											</li>
 											<li>
 												<a href="my-patients">
 													<i class="fas fa-user-injured"></i>
-													<span>My Patients</span>
+													<span>환자내역</span>
 												</a>
 											</li>
 											<li>
 												<a href="schedule-timings">
 													<i class="fas fa-hourglass-start"></i>
-													<span>Schedule Timings</span>
+													<span>근무시간</span>
 												</a>
 											</li>
 											<li>
@@ -277,38 +277,26 @@
 											<li>
 												<a href="reviews">
 													<i class="fas fa-star"></i>
-													<span>Reviews</span>
+													<span>리뷰</span>
 												</a>
 											</li>
 											<li>
 												<a href="chat-doctor">
 													<i class="fas fa-comments"></i>
-													<span>Message</span>
+													<span>메세지</span>
 													<small class="unread-msg">23</small>
 												</a>
 											</li>
 											<li>
 												<a href="doctor-profile-settings">
 													<i class="fas fa-user-cog"></i>
-													<span>Profile Settings</span>
-												</a>
-											</li>
-											<li>
-												<a href="social-media">
-													<i class="fas fa-share-alt"></i>
-													<span>Social Media</span>
-												</a>
-											</li>
-											<li>
-												<a href="doctor-change-password">
-													<i class="fas fa-lock"></i>
-													<span>Change Password</span>
+													<span>프로필 수정</span>
 												</a>
 											</li>
 											<li>
 												<a href="index">
 													<i class="fas fa-sign-out-alt"></i>
-													<span>Logout</span>
+													<span>로그아웃</span>
 												</a>
 											</li>
 										</ul>
@@ -334,9 +322,9 @@
 															</div>
 														</div>
 														<div class="dash-widget-info">
-															<h6>Total Patient</h6>
+															<h6>전체 환자 수</h6>
 															<h3>1500</h3>
-															<p class="text-muted">Till Today</p>
+															<p class="text-muted">오늘까지</p>
 														</div>
 													</div>
 												</div>
@@ -349,9 +337,9 @@
 															</div>
 														</div>
 														<div class="dash-widget-info">
-															<h6>Today Patient</h6>
-															<h3>160</h3>
-															<p class="text-muted">06, Nov 2019</p>
+															<h6>오늘 환자 수</h6>
+															<h3>36</h3>
+															<p class="text-muted">2020-12-04</p>
 														</div>
 													</div>
 												</div>
@@ -364,9 +352,9 @@
 															</div>
 														</div>
 														<div class="dash-widget-info">
-															<h6>Appoinments</h6>
-															<h3>85</h3>
-															<p class="text-muted">06, Apr 2019</p>
+															<h6>내일 예약 수</h6>
+															<h3>51</h3>
+															<p class="text-muted">2020-12-05</p>
 														</div>
 													</div>
 												</div>
@@ -378,16 +366,16 @@
 							
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="mb-4">Patient Appoinment</h4>
+									<h4 class="mb-4">환자 예약현황</h4>
 									<div class="appointment-tab">
 									
 										<!-- Appointment Tab -->
 										<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
 											<li class="nav-item">
-												<a class="nav-link active" href="#upcoming-appointments" data-toggle="tab">Upcoming</a>
+												<a class="nav-link active" href="#upcoming-appointments" data-toggle="tab">다가오는 예약</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#today-appointments" data-toggle="tab">Today</a>
+												<a class="nav-link" href="#today-appointments" data-toggle="tab">내일의 예약</a>
 											</li> 
 										</ul>
 										<!-- /Appointment Tab -->
@@ -402,11 +390,11 @@
 															<table class="table table-hover table-center mb-0">
 																<thead>
 																	<tr>
-																		<th>Patient Name</th>
-																		<th>Appt Date</th>
-																		<th>Purpose</th>
-																		<th>Type</th>
-																		<th class="text-center">Paid Amount</th>
+																		<th>환자</th>
+																		<th>예약시간</th>
+																		<th>증상</th>
+																		<th>구분</th>
+																		<th class="text-center">금액</th>
 																		<th></th>
 																	</tr>
 																</thead>
@@ -415,24 +403,24 @@
 																		<td>
 																			<h2 class="table-avatar">
 																				<a href="patient-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="resources/img/patients/patient.jpg" alt="User Image"></a>
-																				<a href="patient-profile">Richard Wilson <span>#PT0016</span></a>
+																				<a href="patient-profile.jsp">고현영 <span>#12345</span></a>
 																			</h2>
 																		</td>
-																		<td>11 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
-																		<td>General</td>
-																		<td>New Patient</td>
-																		<td class="text-center">$150</td>
+																		<td>2020-12-04 <span class="d-block text-info">10:00 AM</span></td>
+																		<td>불면증</td>
+																		<td>신환</td>
+																		<td class="text-center">25,000원</td>
 																		<td class="text-right">
-																			<div class="table-action">
-																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
-																				</a>
+																			<div class="appointment-action">
+																			<a href="#" class="btn btn-sm bg-info-light" data-toggle="modal" data-target="#appt_details">
+																				<i class="far fa-eye"></i> 상세보기
+																			</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -441,24 +429,24 @@
 																		<td>
 																			<h2 class="table-avatar">
 																				<a href="patient-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="resources/img/patients/patient1.jpg" alt="User Image"></a>
-																				<a href="patient-profile">Charlene Reed <span>#PT0001</span></a>
+																				<a href="patient-profile">신주섭 <span>#12345</span></a>
 																			</h2>
 																		</td>
-																		<td>3 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
-																		<td>General</td>
-																		<td>Old Patient</td>
-																		<td class="text-center">$200</td>
+																		<td>2020-12-04 <span class="d-block text-info">11:00 AM</span></td>
+																		<td>수면장애</td>
+																		<td>구환</td>
+																		<td class="text-center">20,000원</td>
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -477,14 +465,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -503,14 +491,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -529,14 +517,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -555,14 +543,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -583,11 +571,11 @@
 															<table class="table table-hover table-center mb-0">
 																<thead>
 																	<tr>
-																		<th>Patient Name</th>
-																		<th>Appt Date</th>
-																		<th>Purpose</th>
-																		<th>Type</th>
-																		<th class="text-center">Paid Amount</th>
+																		<th>환자</th>
+																		<th>예약시간</th>
+																		<th>증상</th>
+																		<th>구분</th>
+																		<th class="text-center">금액</th>
 																		<th></th>
 																	</tr>
 																</thead>
@@ -596,24 +584,24 @@
 																		<td>
 																			<h2 class="table-avatar">
 																				<a href="patient-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="resources/img/patients/patient6.jpg" alt="User Image"></a>
-																				<a href="patient-profile">Elsie Gilley <span>#PT0006</span></a>
+																				<a href="patient-profile">홍송은 <span>#33333</span></a>
 																			</h2>
 																		</td>
-																		<td>14 Nov 2019 <span class="d-block text-info">6.00 PM</span></td>
-																		<td>Fever</td>
-																		<td>Old Patient</td>
-																		<td class="text-center">$300</td>
+																		<td>2020-12-05 <span class="d-block text-info">9:00 AM</span></td>
+																		<td>불면증</td>
+																		<td>신환</td>
+																		<td class="text-center">30,000원</td>
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -632,14 +620,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -658,14 +646,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -684,14 +672,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -710,14 +698,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -736,14 +724,14 @@
 																		<td class="text-right">
 																			<div class="table-action">
 																				<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																					<i class="far fa-eye"></i> View
+																					<i class="far fa-eye"></i> 상세보기
 																				</a>
 																				
 																				<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-																					<i class="fas fa-check"></i> Accept
+																					<i class="fas fa-check"></i> 수락하기
 																				</a>
 																				<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-																					<i class="fas fa-times"></i> Cancel
+																					<i class="fas fa-times"></i> 취소하기
 																				</a>
 																			</div>
 																		</td>
@@ -910,7 +898,51 @@
 		   
 		</div>
 		<!-- /Main Wrapper -->
-	  
+	  <!-- Appointment Details Modal -->
+		<div class="modal fade custom-modal" id="appt_details">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">예약 상세내역</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<ul class="info-details">
+							<li>
+								<div class="details-header">
+									<div class="row">
+										<div class="col-md-6">
+											<span class="title">진료일정</span>
+											<span class="text">2020-11-30 10:00 AM</span>
+										</div>
+										<div class="col-md-6">
+											<div class="text-right">
+												<button type="button" class="btn bg-success-light btn-sm" id="topup_status">Completed</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="title">상태:</span>
+								<span class="text">진료완료</span>
+							</li>
+							<li>
+								<span class="title">진료날짜:</span>
+								<span class="text">2020-11-30</span>
+							</li>
+							<li>
+								<span class="title">금액</span>
+								<span class="text">25,000원</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Appointment Details Modal -->
 		<!-- jQuery -->
 		<script src="resources/js/jquery.min.js"></script>
 		

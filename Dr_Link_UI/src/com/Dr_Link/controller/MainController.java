@@ -27,4 +27,6 @@ public class MainController {
 		System.out.println("페이지이동");
 		return "doctor/appointments"; 
 	}
+	
+	
 }

@@ -5,26 +5,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Doccure - Profile</title>
+        <title>관리자프로필 - Dr.Link</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="resources/admin/img/favicon.png">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/admin/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+        <link rel="stylesheet" href="resources/admin/css/font-awesome.min.css">
 		
 		<!-- Feathericon CSS -->
-        <link rel="stylesheet" href="resources/css/feathericon.min.css">
+        <link rel="stylesheet" href="resources/admin/css/feathericon.min.css">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/admin/css/style.css">
 		
 		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
+			<script src="resources/admin/js/html5shiv.min.js"></script>
+			<script src="resources/admin/js/respond.min.js"></script>
 		<![endif]-->
     </head>
     <body>
@@ -38,10 +38,10 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index" class="logo">
-						<img src="resources/img/logo.png" alt="Logo">
+						<img src="resources/admin/img/logo.png" alt="Logo">
 					</a>
 					<a href="index" class="logo logo-small">
-						<img src="resources/img/logo-small.png" alt="Logo" width="30" height="30">
+						<img src="resources/admin/img/logo-small.png" alt="Logo" width="30" height="30">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -82,7 +82,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/doctors/doctor-thumb-01.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/doctors/doctor-thumb-01.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Dr. Ruby Perrin</span> Schedule <span class="noti-title">her appointment</span></p>
@@ -95,7 +95,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient1.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient1.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Charlene Reed</span> has booked her appointment to <span class="noti-title">Dr. Ruby Perrin</span></p>
@@ -108,7 +108,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient2.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient2.jpg">
 												</span>
 												<div class="media-body">
 												<p class="noti-details"><span class="noti-title">Travis Trimble</span> sent a amount of $210 for his <span class="noti-title">appointment</span></p>
@@ -121,7 +121,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient3.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient3.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Carl Kelly</span> send a message <span class="noti-title"> to his doctor</span></p>
@@ -142,12 +142,12 @@
 					<!-- User Menu -->
 					<li class="nav-item dropdown has-arrow">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-							<span class="user-img"><img class="rounded-circle" src="resources/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+							<span class="user-img"><img class="rounded-circle" src="resources/admin/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
 						</a>
 						<div class="dropdown-menu">
 							<div class="user-header">
 								<div class="avatar avatar-sm">
-									<img src="resources/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+									<img src="resources/admin/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
 								</div>
 								<div class="user-text">
 									<h6>Ryan Taylor</h6>
@@ -300,10 +300,10 @@
 					<div class="page-header">
 						<div class="row">
 							<div class="col">
-								<h3 class="page-title">Profile</h3>
+								<h3 class="page-title">프로필</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Dashboard</a></li>
-									<li class="breadcrumb-item active">Profile</li>
+									<li class="breadcrumb-item active">프로필</li>
 								</ul>
 							</div>
 						</div>
@@ -316,19 +316,19 @@
 								<div class="row align-items-center">
 									<div class="col-auto profile-image">
 										<a href="#">
-											<img class="rounded-circle" alt="User Image" src="resources/img/profiles/avatar-01.jpg">
+											<img class="rounded-circle" alt="User Image" src="resources/admin/img/profiles/avatar-01.jpg">
 										</a>
 									</div>
 									<div class="col ml-md-n2 profile-user-info">
-										<h4 class="user-name mb-0">Ryan Taylor</h4>
-										<h6 class="text-muted">ryantaylor@admin.com</h6>
-										<div class="user-Location"><i class="fa fa-map-marker"></i> Florida, United States</div>
-										<div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+										<h4 class="user-name mb-0">관리자</h4>
+										<h6 class="text-muted">admin@admin.com</h6>
+										<div class="user-Location"><i class="fa fa-map-marker"></i> 서울시 금천구 가산동</div>
+										<div class="about-text">관리자 프로필 소개입니다.</div>
 									</div>
 									<div class="col-auto profile-btn">
 										
 										<a href="" class="btn btn-primary">
-											Edit
+											수정
 										</a>
 									</div>
 								</div>
@@ -354,31 +354,30 @@
 											<div class="card">
 												<div class="card-body">
 													<h5 class="card-title d-flex justify-content-between">
-														<span>Personal Details</span> 
-														<a class="edit-link" data-toggle="modal" href="#edit_personal_details"><i class="fa fa-edit mr-1"></i>Edit</a>
+														<span>개인정보 상세</span> 
+														<a class="edit-link" data-toggle="modal" href="#edit_personal_details"><i class="fa fa-edit mr-1"></i>수정</a>
 													</h5>
 													<div class="row">
-														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Name</p>
-														<p class="col-sm-10">John Doe</p>
+														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">이름</p>
+														<p class="col-sm-10">관리자</p>
 													</div>
 													<div class="row">
-														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Date of Birth</p>
-														<p class="col-sm-10">24 Jul 1983</p>
+														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">생년월일</p>
+														<p class="col-sm-10">1980-04-03</p>
 													</div>
 													<div class="row">
-														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Email ID</p>
-														<p class="col-sm-10">johndoe@example.com</p>
+														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">이메일</p>
+														<p class="col-sm-10">admin@example.com</p>
 													</div>
 													<div class="row">
-														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">Mobile</p>
-														<p class="col-sm-10">305-310-5857</p>
+														<p class="col-sm-2 text-muted text-sm-right mb-0 mb-sm-3">휴대폰</p>
+														<p class="col-sm-10">010-1234-5678</p>
 													</div>
 													<div class="row">
-														<p class="col-sm-2 text-muted text-sm-right mb-0">Address</p>
-														<p class="col-sm-10 mb-0">4663  Agriculture Lane,<br>
-														Miami,<br>
-														Florida - 33165,<br>
-														United States.</p>
+														<p class="col-sm-2 text-muted text-sm-right mb-0">주소</p>
+														<p class="col-sm-10 mb-0">우편번호 11111)<br>
+														서울시<br>
+														금천구 가산동</p>
 													</div>
 												</div>
 											</div>
@@ -388,7 +387,7 @@
 												<div class="modal-dialog modal-dialog-centered" role="document" >
 													<div class="modal-content">
 														<div class="modal-header">
-															<h5 class="modal-title">Personal Details</h5>
+															<h5 class="modal-title">관리자 정보 수정</h5>
 															<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 																<span aria-hidden="true">&times;</span>
 															</button>
@@ -398,71 +397,65 @@
 																<div class="row form-row">
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>First Name</label>
-																			<input type="text" class="form-control" value="John">
+																			<label>성</label>
+																			<input type="text" class="form-control" value="관">
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>Last Name</label>
-																			<input type="text"  class="form-control" value="Doe">
+																			<label>이름</label>
+																			<input type="text"  class="form-control" value="리자">
 																		</div>
 																	</div>
 																	<div class="col-12">
 																		<div class="form-group">
-																			<label>Date of Birth</label>
+																			<label>생년월일</label>
 																			<div class="cal-icon">
-																				<input type="text" class="form-control" value="24-07-1983">
+																				<input type="text" class="form-control" value="1980-04-03">
 																			</div>
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>Email ID</label>
-																			<input type="email" class="form-control" value="johndoe@example.com">
+																			<label>Email</label>
+																			<input type="email" class="form-control" value="admin@example.com">
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>Mobile</label>
-																			<input type="text" value="+1 202-555-0125" class="form-control">
+																			<label>휴대폰</label>
+																			<input type="text" value="010-1234-5678" class="form-control">
 																		</div>
 																	</div>
 																	<div class="col-12">
-																		<h5 class="form-title"><span>Address</span></h5>
+																		<h5 class="form-title"><span>주소 수정</span></h5>
 																	</div>
-																	<div class="col-12">
+																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																		<label>Address</label>
-																			<input type="text" class="form-control" value="4663 Agriculture Lane">
+																			<label>우편번호</label>
+																			<input type="text" class="form-control" value="11111">
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>City</label>
-																			<input type="text" class="form-control" value="Miami">
+																			<label>시</label>
+																			<input type="text" class="form-control" value="서울시">
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>State</label>
-																			<input type="text" class="form-control" value="Florida">
+																			<label>구</label>
+																			<input type="text" class="form-control" value="금천구">
 																		</div>
 																	</div>
 																	<div class="col-12 col-sm-6">
 																		<div class="form-group">
-																			<label>Zip Code</label>
-																			<input type="text" class="form-control" value="22434">
-																		</div>
-																	</div>
-																	<div class="col-12 col-sm-6">
-																		<div class="form-group">
-																			<label>Country</label>
-																			<input type="text" class="form-control" value="United States">
+																			<label>동</label>
+																			<input type="text" class="form-control" value="가산동">
 																		</div>
 																	</div>
 																</div>
-																<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
+																<button type="submit" class="btn btn-primary btn-block">저장</button>
 															</form>
 														</div>
 													</div>
@@ -484,23 +477,23 @@
 								
 									<div class="card">
 										<div class="card-body">
-											<h5 class="card-title">Change Password</h5>
+											<h5 class="card-title">비밀번호 변경</h5>
 											<div class="row">
 												<div class="col-md-10 col-lg-6">
 													<form>
 														<div class="form-group">
-															<label>Old Password</label>
+															<label>현재 비밀번호</label>
 															<input type="password" class="form-control">
 														</div>
 														<div class="form-group">
-															<label>New Password</label>
+															<label>새 비밀번호</label>
 															<input type="password" class="form-control">
 														</div>
 														<div class="form-group">
-															<label>Confirm Password</label>
+															<label>비밀번호 확인</label>
 															<input type="password" class="form-control">
 														</div>
-														<button class="btn btn-primary" type="submit">Save Changes</button>
+														<button class="btn btn-primary" type="submit">저장</button>
 													</form>
 												</div>
 											</div>
@@ -521,17 +514,17 @@
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="resources/js/jquery-3.2.1.min.js"></script>
+        <script src="resources/admin/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="resources/js/popper.min.js"></script>
-        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="resources/admin/js/popper.min.js"></script>
+        <script src="resources/admin/js/bootstrap.min.js"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="resources/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="resources/admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		
 		<!-- Custom JS -->
-		<script  src="resources/js/script.js"></script>
+		<script  src="resources/admin/js/script.js"></script>
 		
     </body>
 </html>

@@ -230,7 +230,7 @@ width:auto !important;
 															<a href="patient-profile" class="avatar avatar-sm mr-2">
 																<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg" alt="User Image">
 															</a>
-															<a href="patient-profile">홍길자 </a>
+															<a href="doctor-profile">홍길자 </a>
 														</h2>
 													</td>
 													<td>11,230원</td>
@@ -255,7 +255,7 @@ width:auto !important;
 															<a href="patient-profile" class="avatar avatar-sm mr-2">
 																<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg" alt="User Image">
 															</a>
-															<a href="patient-profile">홍길동 </a>
+															<a href="doctor-profile">홍길동 </a>
 														</h2>
 													</td>
 													<td>65,200원</td>

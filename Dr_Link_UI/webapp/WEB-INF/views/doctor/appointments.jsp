@@ -5,7 +5,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Doccure</title>
+		<title>의사진료일정 - Dr.Link</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -208,10 +208,10 @@
 							<nav aria-label="breadcrumb" class="page-breadcrumb">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Appointments</li>
+									<li class="breadcrumb-item active" aria-current="page">일정</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">Appointments</h2>
+							<h2 class="breadcrumb-title">진료일정</h2>
 						</div>
 					</div>
 				</div>
@@ -233,10 +233,10 @@
 											<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3>Dr. Darren Elder</h3>
+											<h3>김성민 의사</h3>
 											
 											<div class="patient-details">
-												<h5 class="mb-0">BDS, MDS - Oral & Maxillofacial Surgery</h5>
+												<h5 class="mb-0">정신건강의학과</h5>
 											</div>
 										</div>
 									</div>
@@ -253,19 +253,19 @@
 											<li class="active">
 												<a href="appointments">
 													<i class="fas fa-calendar-check"></i>
-													<span>Appointments</span>
+													<span>진료일정</span>
 												</a>
 											</li>
 											<li>
 												<a href="my-patients">
 													<i class="fas fa-user-injured"></i>
-													<span>My Patients</span>
+													<span>환자내역</span>
 												</a>
 											</li>
 											<li>
 												<a href="schedule-timings">
 													<i class="fas fa-hourglass-start"></i>
-													<span>Schedule Timings</span>
+													<span>근무시간</span>
 												</a>
 											</li>
 											<li>
@@ -277,38 +277,26 @@
 											<li>
 												<a href="reviews">
 													<i class="fas fa-star"></i>
-													<span>Reviews</span>
+													<span>리뷰</span>
 												</a>
 											</li>
 											<li>
 												<a href="chat-doctor">
 													<i class="fas fa-comments"></i>
-													<span>Message</span>
+													<span>메세지</span>
 													<small class="unread-msg">23</small>
 												</a>
 											</li>
 											<li>
 												<a href="doctor-profile-settings">
 													<i class="fas fa-user-cog"></i>
-													<span>Profile Settings</span>
-												</a>
-											</li>
-											<li>
-												<a href="social-media">
-													<i class="fas fa-share-alt"></i>
-													<span>Social Media</span>
-												</a>
-											</li>
-											<li>
-												<a href="doctor-change-password">
-													<i class="fas fa-lock"></i>
-													<span>Change Password</span>
+													<span>프로필 수정</span>
 												</a>
 											</li>
 											<li>
 												<a href="index">
 													<i class="fas fa-sign-out-alt"></i>
-													<span>Logout</span>
+													<span>로그아웃</span>
 												</a>
 											</li>
 										</ul>
@@ -329,24 +317,24 @@
 											<img src="resources/img/patients/patient.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3><a href="patient-profile">Richard Wilson</a></h3>
+											<h3><a href="patient-profile.jsp">고현영</a></h3>
 											<div class="patient-details">
-												<h5><i class="far fa-clock"></i> 14 Nov 2019, 10.00 AM</h5>
-												<h5><i class="fas fa-map-marker-alt"></i> Newyork, United States</h5>
-												<h5><i class="fas fa-envelope"></i> richard@example.com</h5>
-												<h5 class="mb-0"><i class="fas fa-phone"></i> +1 923 782 4575</h5>
+												<h5><i class="far fa-clock"></i> 2020-11-30, 10:00 AM</h5>
+												<h5><i class="fas fa-map-marker-alt"></i> 서울시 금천구 가산동</h5>
+												<h5><i class="fas fa-envelope"></i> go@example.com</h5>
+												<h5 class="mb-0"><i class="fas fa-phone"></i> 010-1234-5678</h5>
 											</div>
 										</div>
 									</div>
 									<div class="appointment-action">
 										<a href="#" class="btn btn-sm bg-info-light" data-toggle="modal" data-target="#appt_details">
-											<i class="far fa-eye"></i> View
+											<i class="far fa-eye"></i> 상세보기
 										</a>
 										<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-											<i class="fas fa-check"></i> Accept
+											<i class="fas fa-check"></i> 수락하기
 										</a>
 										<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-											<i class="fas fa-times"></i> Cancel
+											<i class="fas fa-times"></i> 취소하기
 										</a>
 									</div>
 								</div>
@@ -359,24 +347,24 @@
 											<img src="resources/img/patients/patient1.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3><a href="patient-profile">Charlene Reed </a></h3>
+											<h3><a href="patient-profile">신주섭 </a></h3>
 											<div class="patient-details">
-												<h5><i class="far fa-clock"></i> 12 Nov 2019, 5.00 PM</h5>
-												<h5><i class="fas fa-map-marker-alt"></i> North Carolina, United States</h5>
-												<h5><i class="fas fa-envelope"></i> charlenereed@example.com</h5>
-												<h5 class="mb-0"><i class="fas fa-phone"></i> +1 828 632 9170</h5>
+												<h5><i class="far fa-clock"></i> 2020-12-01 15:00PM</h5>
+												<h5><i class="fas fa-map-marker-alt"></i> 서울시 관악구 신림동</h5>
+												<h5><i class="fas fa-envelope"></i> shin@example.com</h5>
+												<h5 class="mb-0"><i class="fas fa-phone"></i> 010-1234-5678</h5>
 											</div>
 										</div>
 									</div>
 									<div class="appointment-action">
 										<a href="#" class="btn btn-sm bg-info-light" data-toggle="modal" data-target="#appt_details">
-											<i class="far fa-eye"></i> View
+											<i class="far fa-eye"></i> 상세보기
 										</a>
 										<a href="javascript:void(0);" class="btn btn-sm bg-success-light">
-											<i class="fas fa-check"></i> Accept
+											<i class="fas fa-check"></i> 수락하기
 										</a>
 										<a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-											<i class="fas fa-times"></i> Cancel
+											<i class="fas fa-times"></i> 취소하기
 										</a>
 									</div>
 								</div>
@@ -840,7 +828,7 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Appointment Details</h5>
+						<h5 class="modal-title">예약 상세내역</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -851,8 +839,8 @@
 								<div class="details-header">
 									<div class="row">
 										<div class="col-md-6">
-											<span class="title">#APT0001</span>
-											<span class="text">21 Oct 2019 10:00 AM</span>
+											<span class="title">진료일정</span>
+											<span class="text">2020-11-30 10:00 AM</span>
 										</div>
 										<div class="col-md-6">
 											<div class="text-right">
@@ -863,16 +851,16 @@
 								</div>
 							</li>
 							<li>
-								<span class="title">Status:</span>
-								<span class="text">Completed</span>
+								<span class="title">상태:</span>
+								<span class="text">진료완료</span>
 							</li>
 							<li>
-								<span class="title">Confirm Date:</span>
-								<span class="text">29 Jun 2019</span>
+								<span class="title">진료날짜:</span>
+								<span class="text">2020-11-30</span>
 							</li>
 							<li>
-								<span class="title">Paid Amount</span>
-								<span class="text">$450</span>
+								<span class="title">금액</span>
+								<span class="text">25,000원</span>
 							</li>
 						</ul>
 					</div>

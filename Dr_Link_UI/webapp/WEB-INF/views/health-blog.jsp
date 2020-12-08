@@ -136,7 +136,7 @@
 								<ul class="submenu">
 									<li><a href="blog-list.html">Blog List</a></li>
 									<li class="active"><a href="blog-grid.html">Blog Grid</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
+									<li><a href="health-blog-detail">Blog Details</a></li>
 								</ul>
 							</li>
 							<li class="has-submenu">
@@ -200,13 +200,13 @@
 									<!-- Blog Post -->
 									<div class="blog grid-blog">
 										<div class="blog-image">
-											<a href="blog-details.html"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-01.jpg" alt="Post Image"></a>
+											<a href="health-blog-detail"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-01.jpg" alt="Post Image"></a>
 										</div>
 										<div class="blog-content">
 											<ul class="entry-meta meta-item">
 												<li><i class="far fa-clock"></i> 2020.12.03</li>
 											</ul>
-											<h3 class="blog-title"><a href="blog-details.html">'삐끗' 반복된다면 발목 불안정성 주의, 발목 염좌 </a></h3>
+											<h3 class="blog-title"><a href="health-blog-detail">'삐끗' 반복된다면 발목 불안정성 주의, 발목 염좌 </a></h3>
 											<p class="mb-0">'삐끗' 반복된다면 발목 불안정성 주의 발목 염좌 감수. 정형외과 이경민 교수 30대 초반 직장인 정씨는 지난여름 출근길, </p>
 										</div>
 									</div>
@@ -218,13 +218,13 @@
 									<!-- Blog Post -->
 									<div class="blog grid-blog">
 										<div class="blog-image">
-											<a href="blog-details.html"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-02.jpg" alt="Post Image"></a>
+											<a href="health-blog-detail"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-02.jpg" alt="Post Image"></a>
 										</div>
 										<div class="blog-content">
 											<ul class="entry-meta meta-item">
 												<li><i class="far fa-clock"></i> 3 Dec 2019</li>
 											</ul>
-											<h3 class="blog-title"><a href="blog-details.html">노인의 골다공증성 척추 골절 예방법</a></h3>
+											<h3 class="blog-title"><a href="health-blog-detail">노인의 골다공증성 척추 골절 예방법</a></h3>
 											<p class="mb-0">노인의 골다공증성 척추 골절 예방법 감수. 정형외과 박상민 교수 노인 척추건강을 위협하는 가장 큰 요인인 골다공증.</p>
 										</div>
 									</div>
@@ -236,13 +236,13 @@
 									<!-- Blog Post -->
 									<div class="blog grid-blog">
 										<div class="blog-image">
-											<a href="blog-details.html"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-03.jpg" alt="Post Image"></a>
+											<a href="health-blog-detail"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-03.jpg" alt="Post Image"></a>
 										</div>
 										<div class="blog-content">
 											<ul class="entry-meta meta-item">
 												<li><i class="far fa-clock"></i> 3 Dec 2019</li>
 											</ul>
-											<h3 class="blog-title"><a href="blog-details.html">혈관이 서서히 좁아지는 모야모야병</a></h3>
+											<h3 class="blog-title"><a href="health-blog-detail">혈관이 서서히 좁아지는 모야모야병</a></h3>
 											<p class="mb-0">혈관이 서서히 좁아지는 모야모야병 감수. 신경외과 김택균 교수 모야모야병(moyamoya disease)은 알 수 없는 원인으로 뇌혈관이 좁아지는 질환입니다. </p>
 										</div>
 									</div>
