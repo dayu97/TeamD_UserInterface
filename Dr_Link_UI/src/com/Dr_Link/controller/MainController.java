@@ -35,5 +35,12 @@ public class MainController {
 		return "patients/booking";
 	}
 	
+
+	@RequestMapping(value = "payment")
+	public String payment() {
+		System.out.println("patients 컨트롤러 요청");
+		return "patients/payment";
+	}
+	
 	
 }
