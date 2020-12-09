@@ -189,11 +189,6 @@ body {
 											<!-- Day Slot -->
 											<div class="day-slot">
 												<ul>
-													<li class="left-arrow">
-														<a href="">
-															<i class="fa fa-chevron-left"></i>
-														</a>
-													</li>
 													<li>
 														<span>월요일</span>
 														<span class="slot-date">11 30 <small class="slot-year">2020</small></span>
@@ -221,11 +216,6 @@ body {
 													<li>
 														<span>일요일</span>
 														<span class="slot-date">12 6 <small class="slot-year">2020</small></span>
-													</li>
-													<li class="right-arrow">
-														<a href="">
-															<i class="fa fa-chevron-right"></i>
-														</a>
 													</li>
 												</ul>
 											</div>
