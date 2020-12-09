@@ -120,7 +120,7 @@ width:auto !important;
 						<a href="">온라인예약</a>
 					</li>
 					<li class="has-submenu">
-						<a href="">온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
+						<a>온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
 						<ul class="submenu">
 							<li><a href="${pageContext.request.contextPath}/doctor/add-billing">AI진단</a></li>
 							<!--  <li><a href="pharmacy-index">AI진단</a></li> -->

@@ -9,22 +9,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="resources/img/favicon.png" rel="icon">
+		<link href="${pageContext.request.contextPath}/resources/img/favicon.png" rel="icon">
 		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/all.min.css">
 		
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/js/html5shiv.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/js/respond.min.js"></script>
 		<![endif]-->
 	
 	</head>
@@ -45,13 +45,13 @@
 							</span>
 						</a>
 						<a href="index" class="navbar-brand logo">
-							<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
+							<img src="${pageContext.request.contextPath}/resources/img/logo.png" class="img-fluid" alt="Logo">
 						</a>
 					</div>
 					<div class="main-menu-wrapper">
 						<div class="menu-header">
 							<a href="index" class="menu-logo">
-								<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
+								<img src="${pageContext.request.contextPath}/resources/img/logo.png" class="img-fluid" alt="Logo">
 							</a>
 							<a id="menu_close" class="menu-close" href="javascript:void(0);">
 								<i class="fas fa-times"></i>
@@ -188,7 +188,7 @@
 							<div class="account-content">
 								<div class="row align-items-center justify-content-center">
 									<div class="col-md-7 col-lg-6 login-left">
-										<img src="resources/img/login-banner.png" class="img-fluid" alt="Login Banner">	
+										<img src="${pageContext.request.contextPath}/resources/img/login-banner.png" class="img-fluid" alt="Login Banner">	
 									</div>
 									<div class="col-md-12 col-lg-6 login-right">
 										<div class="login-header">
@@ -253,7 +253,7 @@
 								<!-- Footer Widget -->
 								<div class="footer-widget footer-about">
 									<div class="footer-logo">
-										<img src="resources/img/footer-logo.png" alt="logo">
+										<img src="${pageContext.request.contextPath}/resources/img/footer-logo.png" alt="logo">
 									</div>
 									<div class="footer-about-content">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -384,14 +384,14 @@
 		<!-- /Main Wrapper -->
 	  
 		<!-- jQuery -->
-		<script src="resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="resources/js/popper.min.js"></script>
-		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 		
 		<!-- Custom JS -->
-		<script src="resources/js/script.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 		
 	</body>
 </html>
