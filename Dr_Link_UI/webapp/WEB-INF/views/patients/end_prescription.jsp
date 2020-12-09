@@ -174,7 +174,7 @@ body {
 														</table>
 													</div>
 												<div class="text-center" style="margin:10px !important;">		
-											<button type="submit" class="btn btn-info submit-btn" formaction="index">처방전 상세페이지</button>
+											<button type="submit" class="btn btn-info submit-btn" formaction="detail_prescription">처방전 상세페이지</button>
 											<button type="submit" class="btn btn-info submit-btn" formaction="#">메인으로</button>
 											</div>
 									</div>
