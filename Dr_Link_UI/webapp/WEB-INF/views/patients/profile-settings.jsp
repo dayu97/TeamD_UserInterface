@@ -90,7 +90,7 @@ body {
 						<a href="health-blog">건강정보</a>
 					</li>
 					<li class="has-submenu">
-						<a href="faq">FAQ</a>
+						<a href="question">FAQ</a>
 					</li>
 					<li class="has-submenu">
 						<a href="booking">온라인예약</a>

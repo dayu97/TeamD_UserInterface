@@ -203,11 +203,11 @@ body {
 								<a href="transactions-list"><i class="fe fe-activity"></i> <span>결제관리</span></a>
 							</li>
 							<li class="submenu">
-								<a href="#"><i class="fe fe-document"></i> <span> 게시판관리 </span> <span class="menu-arrow"></span></a>
+								<a><i class="fe fe-document"></i> <span> 게시판관리 </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="blog"> 공지사항 </a></li>
-									<li><a href="blog-details"> FAQ</a></li>
-									<li><a href="add-blog"> 건강소식 게시판 </a></li>
+									<li><a href="notice"> 공지사항 </a></li>
+									<li><a href="question"> FAQ</a></li>
+									<li><a href="health-info"> 건강소식 게시판 </a></li>
 								</ul>
 							</li>
 							<li> 

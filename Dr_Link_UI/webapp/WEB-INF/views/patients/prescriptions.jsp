@@ -4,116 +4,174 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>환자대쉬보드 - Dr.Link</title>
+		<title>처방</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="${pageContext.request.contextPath}/resources/img/favicon.png" rel="icon">
+		<link type="image/x-icon" href="../resources/img/favicon.png" rel="icon">
 		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../resources/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="../resources/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="../resources/plugins/fontawesome/css/all.min.css">
 		
+		 <!-- Daterangepikcer CSS -->
+		<!-- <link rel="stylesheet" href="resources/plugins/daterangepicker/daterangepicker.css">
+		 -->
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
+		<link rel="stylesheet" href="../resources/css/style.css">
 		
-	<!-- 구글폰트 -->
-<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+		<!-- 구글폰트 -->
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="resources/js/html5shiv.min.js"></script>
+			<script src="resources/js/respond.min.js"></script>
+		<![endif]-->
+	<style >
+		body {
+		    font-family: "Nanum Gothic", sans-serif !important;
+		}
+		
+		#header-wrapper{
+			background-image: url("../resorces/img/banner.jpg") ;
+			background-size : cover !important;
+		}
+		
+		@media all and (min-width: 992px) {
+			.navbar .nav-item .dropdown-menu{ display: none; }
+			.navbar .nav-item:hover .nav-link{ color: black;  }
+			.navbar .nav-item:hover .dropdown-menu{ display: block; }
+			.navbar .nav-item .dropdown-menu{ margin-top:0; }
+		}	
+		
+		#drlink{
+		font-family: 'Major Mono Display', monospace; 
+		margin-right: 20px ;
+		}
+		
+		ul .bxslider{
+		width:auto !important;
+		}
+		
+		#bxslider{
+		width:auto !important;
+		}
 
-<style>
-body {
-    font-family: "Nanum Gothic", sans-serif;
+		
 }
-
-
-.footer-menu{
-	color:#fff;
-}
-
 </style>
-	
 	</head>
 	<body>
 
-		<!-- Main Wrapper -->
-		<div class="main-wrapper">
+			<!-- Main Wrapper -->
+	<div class="main-wrapper">
 		
 			<!-- Header -->
-	<header class="header">
-		<nav class="navbar navbar-expand-lg header-nav">
-			<div class="navbar-header">
-				<a id="mobile_btn" href="javascript:void(0);">
-					<span class="bar-icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</a>
-				<!-- <h1><a id="drlink" href="#" >Dr.Link</a></h1> -->
-				<a href="#" class="menu-logo">
-						<img src="${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
+		<header class="header">
+			<nav class="navbar navbar-expand-lg header-nav">
+				<div class="navbar-header">
+					<a id="mobile_btn" href="javascript:void(0);">
+						<span class="bar-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
 					</a>
+					<h1><a id="drlink" href="../index.jsp" >Dr.Link</a></h1>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="menu-header">
+						<a href="index" class="menu-logo">
+							<img src="../resources/img/logo.png" class="img-fluid" alt="Logo">
+						</a>
+						<a id="menu_close" class="menu-close" href="javascript:void(0);">
+							<i class="fas fa-times"></i>
+						</a>
+					</div>
+					<ul class="main-nav" >
+						<li class="active">
+							<a href="../index.jsp">Home</a>
+						</li>
+						<li class="has-submenu">
+							<a href="">공지사항<!-- <i class="fas fa-chevron-down"></i> --></a>
+							<!-- <ul class="submenu">
+								<li><a href="doctor-dashboard">Doctor Dashboard</a></li>
+								<li class="has-submenu">
+									<a href="doctor-blog">Blog</a>
+									<ul class="submenu">
+										<li><a href="doctor-blog">Blog</a></li>
+										<li><a href="blog-details">Blog view</a></li>
+										<li><a href="doctor-add-blog">Add Blog</a></li>
+									</ul>
+								</li>
+							</ul> -->
+						</li>	
+						<li class="has-submenu">
+							<a href="../patients/booking">온라인예약</a>
+							
+						</li>
+						<li class="has-submenu">
+							<a href="">온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
+							<ul class="submenu">
+								<li><a href="doctor/add-billing">AI진단</a></li>
+								<!--  <li><a href="pharmacy-index">AI진단</a></li> -->
+								<li><a href="pharmacy-details">설문진단</a></li>
+							</ul>
+						</li>
+						<li class="has-submenu">
+							<a href="">건강정보</a>
+						</li>
+						<li class="has-submenu">
+							<a href="">마이페이지</a>
+						</li>
+						
+						<li class="login-link">
+							<a href="${contextPath}pharmacy/login">로그인 / 회원가입</a>
+						</li>
+					</ul>		 
+				</div>		 
+				<ul class="nav header-navbar-rht">
 					
-			</div>
-			<div class="main-menu-wrapper">
-				
-				<ul class="main-nav" >
-					<li class="has-submenu">
-						<a href="doctor-list">의료진 소개</a>
+					<li class="nav-item">
+						<a class="nav-link header-login" href="${contextPath}pharmacy/login">로그인 / 회원가입</a>
 					</li>
-					<li class="has-submenu">
-						<a href="notice">공지사항<!-- <i class="fas fa-chevron-down"></i> --></a>
-						<!-- <ul class="submenu">
-							<li><a href="doctor-dashboard">Doctor Dashboard</a></li>
-							<li class="has-submenu">
-								<a href="doctor-blog">Blog</a>
-								<ul class="submenu">
-									<li><a href="doctor-blog">Blog</a></li>
-									<li><a href="blog-details">Blog view</a></li>
-									<li><a href="doctor-add-blog">Add Blog</a></li>
-								</ul>
-							</li>
-						</ul> -->
-					</li>	
-					<li class="has-submenu">
-						<a href="health-blog">건강정보</a>
-					</li>
-					<li class="has-submenu">
-						<a href="faq">FAQ</a>
-					</li>
-					<li class="has-submenu">
-						<a href="booking">온라인예약</a>
-					</li>
-					<li class="has-submenu">
-						<a>온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
-						<ul class="submenu">
-							<li><a href="AI_medical_eye">안과진단</a></li>
-							<li><a href="AI_medical_skin">피부과진단</a></li>
-							<!--  <li><a href="pharmacy-index">AI진단</a></li> -->
-						</ul>
-					</li>
-					<li class="has-submenu">
-						<a href="dashboard">마이페이지<!-- <i class="fas fa-chevron-down"></i> --></a>
-						<!-- <ul class="submenu">
-							<li><a href="invoices">결제내역</a></li>
-						</ul> -->
-					</li>
-				</ul>		 
-			</div>		 
-			<ul class="nav header-navbar-rht">
-				
-				<li class="nav-item">
-					<a class="nav-link header-login" href="login">로그인 / 회원가입</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<!-- /Header -->
+			
+	
+						
+						<!-- User Menu -->
+						<li class="nav-item dropdown has-arrow logged-item">
+							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+								<span class="user-img">
+									<img class="rounded-circle" src="../resources/img/patients/patient.jpg" width="31" alt="Ryan Taylor">
+								</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<div class="user-header">
+									<div class="avatar avatar-sm">
+										<img src="../resources/img/patients/patient.jpg" alt="User Image" class="avatar-img rounded-circle">
+									</div>
+									<div class="user-text">
+										<h6>Richard Wilson</h6>
+										<p class="text-muted mb-0">Patient</p>
+									</div>
+								</div>
+								<a class="dropdown-item" href="patient-dashboard">Dashboard</a>
+								<a class="dropdown-item" href="profile-settings">Profile Settings</a>
+								<a class="dropdown-item" href="login">Logout</a>
+							</div>
+						</li>
+						<!-- /User Menu -->
+						
+					</ul>
+				</nav>
+			</header>
+			<!-- /Header -->
 			
 			<!-- Breadcrumb -->
 			<div class="breadcrumb-bar">
@@ -126,7 +184,7 @@ body {
 									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">대쉬보드</h2>
+							<h2 class="breadcrumb-title">마이페이지</h2>
 						</div>
 					</div>
 				</div>
@@ -145,13 +203,13 @@ body {
 								<div class="widget-profile pro-widget-content">
 									<div class="profile-info-widget">
 										<a href="#" class="booking-doc-img">
-											<img src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg" alt="User Image">
+											<img src="../resources/img/patients/patient.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3>김 환자</h3>
+											<h3>홍길동</h3>
 											<div class="patient-details">
-												<h5><i class="fas fa-birthday-cake"></i> 1990년 8월 23일, 만 30 세</h5>
-												<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> 금천구, 서울</h5>
+												<h5><i class="fas fa-birthday-cake"></i> 1993년 1월 1일</h5>
+												<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Seoul, 한국</h5>
 											</div>
 										</div>
 									</div>
@@ -162,26 +220,32 @@ body {
 											<li class="active">
 												<a href="patient-dashboard">
 													<i class="fas fa-columns"></i>
-													<span>진료확인</span>
+													<span>Dashboard</span>
 												</a>
 											</li>
 											<li>
 												<a href="favourites">
 													<i class="fas fa-bookmark"></i>
-													<span>Favourites</span>
+													<span>즐겨찾기</span>
 												</a>
 											</li>
 											<li>
 												<a href="chat">
 													<i class="fas fa-comments"></i>
-													<span>Message</span>
+													<span>메세지</span>
 													<small class="unread-msg">23</small>
 												</a>
 											</li>
 											<li>
 												<a href="profile-settings">
 													<i class="fas fa-user-cog"></i>
-													<span>개인정보 수정</span>
+													<span>프로필 수정</span>
+												</a>
+											</li>
+											<li>
+												<a href="change-password">
+													<i class="fas fa-lock"></i>
+													<span>비밀번호 변경</span>
 												</a>
 											</li>
 											<li>
@@ -206,16 +270,16 @@ body {
 									<nav class="user-tabs mb-4">
 										<ul class="nav nav-tabs nav-tabs-bottom nav-justified">
 											<li class="nav-item">
-												<a class="nav-link active" href="#pat_appointments" data-toggle="tab">예약일정</a>
+												<a class="nav-link" href="appointments" data-toggle="tab">예약</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#pat_prescriptions" data-toggle="tab">처방</a>
+												<a class="nav-link active" href="prescriptions" data-toggle="tab">처방</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#pat_medical_records" data-toggle="tab"><span class="med-records">과거 진료내역</span></a>
+												<a class="nav-link" href="#pat_medical_records" data-toggle="tab"><span class="med-records">의료 기록</span></a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="#pat_billing" data-toggle="tab">결제내역</a>
+												<a class="nav-link" href="#pat_billing" data-toggle="tab">청구</a>
 											</li>
 										</ul>
 									</nav>
@@ -233,11 +297,11 @@ body {
 															<thead>
 																<tr>
 																	<th>의사</th>
-																	<th>진료일자</th>
-																	<th>예약일자</th>
-																	<th>금액</th>
-																	<th>다음예약일자</th>
-																	<th>상태</th>
+																	<th>신청 날짜</th>
+																	<th>예약 날짜</th>
+																	<th>가격</th>
+																	<!-- <th>후속 조치</th>
+																	<th>상태</th> -->
 																	<th></th>
 																</tr>
 															</thead>
@@ -246,23 +310,23 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="../resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
+																			<a href="doctor-profile">홍길동 <span>피부과</span></a>
 																		</h2>
 																	</td>
-																	<td>2020-12-04 <span class="d-block text-info">15:00 PM</span></td>
-																	<td>2020-12-01</td>
-																	<td>22,000원</td>
-																	<td>2020-12-09</td>
-																	<td><span class="badge badge-pill bg-success-light">진료완료</span></td>
+																	<td>2020년 12월 07일 <span class="d-block text-info">10.00 AM</span></td>
+																	<td>2020년 12월 07일 </td>
+																	<td>16,000원</td>
+																	<!-- <td>2020년 12월 07일</td>
+																	< td><span class="badge badge-pill bg-success-light">확인</span></td>-->
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -271,107 +335,33 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김다유 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Darren Elder <span>Dental</span></a>
 																		</h2>
 																	</td>
-																	<td>2020-11-30 <span class="d-block text-info">14:00 PM</span></td>
-																	<td>2020-11-15</td>
-																	<td>23,500원</td>
-																	<td>2020-12-04</td>
-																	<td><span class="badge badge-pill bg-success-light">진료완료</span></td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
-																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
-																		</h2>
-																	</td>
-																	<td>2020-11-15 <span class="d-block text-info">11:00 AM</span></td>
-																	<td>2020-11-01</td>
-																	<td>15,000원</td>
-																	<td>2020-11-30</td>
-																	<td><span class="badge badge-pill bg-danger-light">진료취소</span></td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
-																			</a>
-																			<a href="doctor-profile">이석 <span>피부과</span></a>
-																		</h2>
-																	</td>
-																	<td>2020-10-31 <span class="d-block text-info">16:00 PM</span></td>
-																	<td>2020-10-22</td>
-																	<td>25,000원</td>
-																	<td>2020-11-03</td>
-																	<td><span class="badge badge-pill bg-warning-light">진료보류</span></td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
-																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
-																			</a>
-																			<a href="doctor-profile">Dr. Marvin Campbell <span>Ophthalmology</span></a>
-																		</h2>
-																	</td>
-																	<td>9 Nov 2019 <span class="d-block text-info">7.00 PM</span></td>
-																	<td>8 Nov 2019</td>
-																	<td>$75</td>
-																	<td>11 Nov 2019</td>
+																	<td>12 Nov 2019 <span class="d-block text-info">8.00 PM</span></td>
+																	<td>12 Nov 2019</td>
+																	<td>$250</td>
+																	<td>14 Nov 2019</td>
 																	<td><span class="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
 																</tr>
+																
 																<tr>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Katharine Berthold <span>Orthopaedics</span></a>
 																		</h2>
@@ -384,10 +374,10 @@ body {
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -396,7 +386,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Linda Tobin <span>Neurology</span></a>
 																		</h2>
@@ -409,10 +399,10 @@ body {
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -421,7 +411,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Paul Richard <span>Dermatology</span></a>
 																		</h2>
@@ -434,10 +424,10 @@ body {
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -446,7 +436,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. John Gibbs <span>Dental</span></a>
 																		</h2>
@@ -459,10 +449,10 @@ body {
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -471,7 +461,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Olga Barlow  <span>Dental</span></a>
 																		</h2>
@@ -484,10 +474,10 @@ body {
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
+																				<i class="fas fa-print"></i> 출력
 																			</a>
 																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
+																				<i class="far fa-eye"></i> 상세보기
 																			</a>
 																		</div>
 																	</td>
@@ -508,44 +498,22 @@ body {
 														<table class="table table-hover table-center mb-0">
 															<thead>
 																<tr>
-																	<th>처방일자 </th>
-																	<th>처방전</th>									
-																	<th>처방의사 </th>
+																	<th>Date </th>
+																	<th>Name</th>									
+																	<th>Created by </th>
 																	<th></th>
 																</tr>     
 															</thead>
 															<tbody>
 																<tr>
-																	<td>2020-12-04</td>
-																	<td>처방전 1</td>
+																	<td>14 Nov 2019</td>
+																	<td>Prescription 1</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
-																		</h2>
-																	</td>
-																	<td class="text-right">
-																		<div class="table-action">
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
-																				<i class="fas fa-print"></i> Print
-																			</a>
-																			<a href="detail_prescription" class="btn btn-sm bg-info-light">
-																				<i class="far fa-eye"></i> View
-																			</a>
-																		</div>
-																	</td>
-																</tr>
-																<tr>
-																	<td>2020-11-30</td>
-																	<td>처방전 2</td>
-																	<td>
-																		<h2 class="table-avatar">
-																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
-																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Ruby Perrin <span>Dental</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -560,14 +528,14 @@ body {
 																	</td>
 																</tr>
 																<tr>
-																	<td>2020-11-15</td>
-																	<td>처방전 3</td>
+																	<td>13 Nov 2019</td>
+																	<td>Prescription 2</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김다유 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Darren Elder <span>Dental</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -582,14 +550,36 @@ body {
 																	</td>
 																</tr>
 																<tr>
-																	<td>2020-10-31</td>
-																	<td>처방전 4</td>
+																	<td>12 Nov 2019</td>
+																	<td>Prescription 3</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">이석 <span>피부과</span></a>
+																			<a href="doctor-profile">Dr. Deborah Angel <span>Cardiology</span></a>
+																		</h2>
+																	</td>
+																	<td class="text-right">
+																		<div class="table-action">
+																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																				<i class="fas fa-print"></i> Print
+																			</a>
+																			<a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+																				<i class="far fa-eye"></i> View
+																			</a>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td>11 Nov 2019</td>
+																	<td>Prescription 4</td>
+																	<td>
+																		<h2 class="table-avatar">
+																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
+																			</a>
+																			<a href="doctor-profile">Dr. Sofia Brient <span>Urology</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -609,7 +599,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Marvin Campbell <span>Dental</span></a>
 																		</h2>
@@ -631,7 +621,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Katharine Berthold <span>Orthopaedics</span></a>
 																		</h2>
@@ -653,7 +643,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Linda Tobin <span>Neurology</span></a>
 																		</h2>
@@ -675,7 +665,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Paul Richard <span>Dermatology</span></a>
 																		</h2>
@@ -697,7 +687,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. John Gibbs <span>Dental</span></a>
 																		</h2>
@@ -719,7 +709,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Olga Barlow <span>Dental</span></a>
 																		</h2>
@@ -751,26 +741,26 @@ body {
 														<table class="table table-hover table-center mb-0">
 															<thead>
 																<tr>
-																	<th>면허번호</th>
-																	<th>처방날짜 </th>
-																	<th>증상</th>
-																	<th>진료기록</th>
-																	<th>담당의사</th>
+																	<th>ID</th>
+																	<th>Date </th>
+																	<th>Description</th>
+																	<th>Attachment</th>
+																	<th>Created</th>
 																	<th></th>
 																</tr>     
 															</thead>
 															<tbody>
 																<tr>
-																	<td><a href="javascript:void(0);">#12345</a></td>
-																	<td>2020-10-31</td>
-																	<td>우울증</td>
-																	<td><a href="#">20201031_김환자.pdf</a></td>
+																	<td><a href="javascript:void(0);">#MR-0010</a></td>
+																	<td>14 Nov 2019</td>
+																	<td>Dental Filling</td>
+																	<td><a href="#">dental-test.pdf</a></td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김다유 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Ruby Perrin <span>Dental</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -785,16 +775,16 @@ body {
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#12345</a></td>
-																	<td>2020-10-19</td>
-																	<td>수면장애</td>
-																	<td><a href="#">20201019_김환자.pdf</a></td>
+																	<td><a href="javascript:void(0);">#MR-0009</a></td>
+																	<td>13 Nov 2019</td>
+																	<td>Teeth Cleaning</td>
+																	<td><a href="#">dental-test.pdf</a></td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김다유 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Darren Elder <span>Dental</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -809,16 +799,16 @@ body {
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#45678</a></td>
-																	<td>2020-09-19</td>
-																	<td>아토피</td>
-																	<td><a href="#">20200919_김환자.pdf</a></td>
+																	<td><a href="javascript:void(0);">#MR-0008</a></td>
+																	<td>12 Nov 2019</td>
+																	<td>General Checkup</td>
+																	<td><a href="#">cardio-test.pdf</a></td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">이석 <span>피부과</span></a>
+																			<a href="doctor-profile">Dr. Deborah Angel <span>Cardiology</span></a>
 																		</h2>
 																	</td>
 																	<td class="text-right">
@@ -840,7 +830,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Sofia Brient <span>Urology</span></a>
 																		</h2>
@@ -864,7 +854,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Marvin Campbell <span>Ophthalmology</span></a>
 																		</h2>
@@ -888,7 +878,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Katharine Berthold <span>Orthopaedics</span></a>
 																		</h2>
@@ -912,7 +902,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Linda Tobin <span>Neurology</span></a>
 																		</h2>
@@ -936,7 +926,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Paul Richard <span>Dermatology</span></a>
 																		</h2>
@@ -960,7 +950,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. John Gibbs <span>Dental</span></a>
 																		</h2>
@@ -984,7 +974,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Olga Barlow <span>Dental</span></a>
 																		</h2>
@@ -1016,28 +1006,28 @@ body {
 														<table class="table table-hover table-center mb-0">
 															<thead>
 																<tr>
-																	<th>결제번호</th>
-																	<th>담당의사</th>
-																	<th>금액</th>
-																	<th>결제날짜</th>
+																	<th>Invoice No</th>
+																	<th>Doctor</th>
+																	<th>Amount</th>
+																	<th>Paid On</th>
 																	<th></th>
 																</tr>
 															</thead>
 															<tbody>
 																<tr>
 																	<td>
-																		<a href="invoice-view">#11111</a>
+																		<a href="invoice-view">#INV-0010</a>
 																	</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-01.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
+																			<a href="doctor-profile">Ruby Perrin <span>Dental</span></a>
 																		</h2>
 																	</td>
-																	<td>25,000원</td>
-																	<td>2020-11-30</td>
+																	<td>$450</td>
+																	<td>14 Nov 2019</td>
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="invoice-view" class="btn btn-sm bg-info-light">
@@ -1051,18 +1041,18 @@ body {
 																</tr>
 																<tr>
 																	<td>
-																		<a href="invoice-view">#11122</a>
+																		<a href="invoice-view">#INV-0009</a>
 																	</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">김성민 <span>정신과</span></a>
+																			<a href="doctor-profile">Dr. Darren Elder <span>Dental</span></a>
 																		</h2>
 																	</td>
-																	<td>15,000원</td>
-																	<td>2020-11-14</td>
+																	<td>$300</td>
+																	<td>13 Nov 2019</td>
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="invoice-view" class="btn btn-sm bg-info-light">
@@ -1076,18 +1066,18 @@ body {
 																</tr>
 																<tr>
 																	<td>
-																		<a href="invoice-view">#22222</a>
+																		<a href="invoice-view">#INV-0008</a>
 																	</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-03.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">이석 <span>피부과</span></a>
+																			<a href="doctor-profile">Dr. Deborah Angel <span>Cardiology</span></a>
 																		</h2>
 																	</td>
-																	<td>35,000원</td>
-																	<td>2020-10-30</td>
+																	<td>$150</td>
+																	<td>12 Nov 2019</td>
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="invoice-view" class="btn btn-sm bg-info-light">
@@ -1101,18 +1091,18 @@ body {
 																</tr>
 																<tr>
 																	<td>
-																		<a href="invoice-view">#33333</a>
+																		<a href="invoice-view">#INV-0007</a>
 																	</td>
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-04.jpg" alt="User Image">
 																			</a>
-																			<a href="doctor-profile">이석 <span>피부과</span></a>
+																			<a href="doctor-profile">Dr. Sofia Brient <span>Urology</span></a>
 																		</h2>
 																	</td>
-																	<td>23,500원</td>
-																	<td>2020-09-19</td>
+																	<td>$50</td>
+																	<td>11 Nov 2019</td>
 																	<td class="text-right">
 																		<div class="table-action">
 																			<a href="invoice-view" class="btn btn-sm bg-info-light">
@@ -1131,7 +1121,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-05.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Marvin Campbell <span>Ophthalmology</span></a>
 																		</h2>
@@ -1156,7 +1146,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-06.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Katharine Berthold <span>Orthopaedics</span></a>
 																		</h2>
@@ -1181,7 +1171,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-07.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Linda Tobin <span>Neurology</span></a>
 																		</h2>
@@ -1206,7 +1196,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-08.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Paul Richard <span>Dermatology</span></a>
 																		</h2>
@@ -1231,7 +1221,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-09.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. John Gibbs <span>Dental</span></a>
 																		</h2>
@@ -1256,7 +1246,7 @@ body {
 																	<td>
 																		<h2 class="table-avatar">
 																			<a href="doctor-profile" class="avatar avatar-sm mr-2">
-																				<img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
+																				<img class="avatar-img rounded-circle" src="resources/img/doctors/doctor-thumb-10.jpg" alt="User Image">
 																			</a>
 																			<a href="doctor-profile">Dr. Olga Barlow <span>#0010</span></a>
 																		</h2>
@@ -1296,18 +1286,18 @@ body {
 			<!-- /Page Content -->
    
 			<!-- Footer -->
-	<footer class="footer">
-		
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-					
-						<!-- Footer Widget -->
+			<footer class="footer">
+				
+				<!-- Footer Top -->
+				<div class="footer-top">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+							
+								<!-- Footer Widget -->
 						<div class="footer-widget footer-about">
 							<div class="footer-logo">
-								<h1 id="drlink" style="color:#fff;">Dr.Link</h1>
+								<h1 id="drlink">Dr.Link</h1>
 							</div>
 							<div class="footer-about-content">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -1340,9 +1330,9 @@ body {
 					
 						<!-- Footer Widget -->
 						<div class="footer-widget footer-menu">
-							<h2 class="footer-title"><a href="notice" class="footer-menu">공지사항</a></h2>
-							<h2 class="footer-title"><a href="booking" class="footer-menu">온라인 예약</a></h2>
-							<h2 class="footer-title"><a href="health-care" class="footer-menu">건강정보</a></h2>
+							<h2 class="footer-title">공지사항</h2>
+							<h2 class="footer-title">온라인 예약</h2>
+							<h2 class="footer-title">건강정보</h2>
 						</div>
 						<!-- /Footer Widget -->
 						
@@ -1352,10 +1342,10 @@ body {
 					
 						<!-- Footer Widget -->
 						<div class="footer-widget footer-menu">
-							<h2 class="footer-title"><a href="" class="footer-menu">온라인 간편 진단</a></h2>
+							<h2 class="footer-title">온라인 간편 진단</h2>
 							<ul>
-								<li><a href="AI_medical_eye">안과 진단</a></li>
-								<li><a href="AI_medical_skin">피부과 진단</a></li>
+								<li><a href="${contextPath}pharmacy/pharmacy-index">AI진단</a></li>
+								<li><a href="chat">설문 진단</a></li>
 							</ul>
 						</div>
 						<!-- /Footer Widget -->
@@ -1370,39 +1360,38 @@ body {
 								<div class="footer-contact-info">
 									<div class="footer-address">
 										<span><i class="fas fa-map-marker-alt"></i></span>
-										<p> 서울 금천구 가산디지털2로 123 월드메르디앙벤처센터II </p>
+										<p> 3556  Beech Street, San Francisco,<br> California, CA 94108 </p>
 									</div>
 									<p>
 										<i class="fas fa-phone-alt"></i>
-										02-2025-4119
+										+1 315 369 5943
 									</p>
 									<p class="mb-0">
 										<i class="fas fa-envelope"></i>
-										drlink@naver.com
+										doccure@example.com
 									</p>
-								</div>
 								</div>
 							</div>
 						</div>
-						<!-- /Footer Widget -->
-						
-					</div>
-					
+					</div>	
 				</div>
 			</div>
-		</div>
-		<!-- /Footer Top -->
-		
-		<!-- Footer Bottom -->
-              <div class="footer-bottom" style="margin:5px !important; padding:10px !important;">
-			<div class="container-fluid">
-			
-				<!-- Copyright -->
+					</div>
+				
+				<!-- /Footer Top -->
+				
+				<!-- Footer Bottom -->
+            	  <div class="footer-bottom" style="margin:5px !important; padding:10px !important;">
+					<div class="container-fluid">
+					
+						<!-- Copyright -->
 				<div class="copyright">
 					<div class="row">
 						<div class="col-md-7 col-lg-7">
 							<div class="copyright-text">
 								<p>
+									서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 |
+									<span style="color:red">응급의료센터</span> 02-2626-1114<br/>
 									Copyright &copy; by Dr.Link All Rights Reserved.
 								</p>
 							</div>
@@ -1414,30 +1403,30 @@ body {
 					</div>
 				</div>
 				<!-- /Copyright -->
+						
+					</div>
 				
-			</div>
-		</div>
-		<!-- /Footer Bottom -->
-		
-	</footer>
-	<!-- /Footer -->
+				<!-- /Footer Bottom -->
+				
+			</footer>
+			<!-- /Footer -->
 		   
 		</div>
 		<!-- /Main Wrapper -->
 	  
 		<!-- jQuery -->
-		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
+		<script src="resources/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
-		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
+		<script src="resources/js/popper.min.js"></script>
+		<script src="resources/js/bootstrap.min.js"></script>
 		
 		<!-- Sticky Sidebar JS -->
-        <script src="${pageContext.request.contextPath}/resources/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
-        <script src="${pageContext.request.contextPath}/resources/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+        <script src="resources/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="resources/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
 		
 		<!-- Custom JS -->
-		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
+		<script src="resources/js/script.js"></script>
 		
 	</body>
 </html>

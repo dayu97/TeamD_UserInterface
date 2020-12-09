@@ -141,7 +141,7 @@ body {
 										<i class="fas fa-check"></i>
 										<h3>예약이 완료되었습니다!</h3>
 										<p>예약된 의사 : <strong>{정신과} {김성민} 의사</strong><br> 예약 일시 : <strong>2020년 12월 6일 오후 3시~ 3시30분</strong></p>
-										<a href="invoice-view" class="btn btn-primary view-inv-btn">결제 내역 보기</a>
+										<a href="index.jsp" class="btn btn-primary view-inv-btn">메인화면으로</a>
 									</div>
 								</div>
 							</div>

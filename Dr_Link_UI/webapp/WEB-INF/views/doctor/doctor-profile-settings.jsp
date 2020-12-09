@@ -317,6 +317,7 @@
 						<div class="col-md-7 col-lg-8 col-xl-9">
 						
 							<!-- Basic Information -->
+							<form action="doctor-dashboard">
 							<div class="card">
 								<div class="card-body">
 									<h4 class="card-title">기본 정보</h4>
@@ -708,9 +709,9 @@
 							<!-- /password -->
 							
 							<div class="submit-section submit-btn-bottom">
-								<button type="submit" class="btn btn-primary submit-btn">변경 저장하기</button>
+								<button type="submit" class="btn btn-primary submit-btn" >변경 저장하기</button>
 							</div>
-							
+							</form>
 						</div>
 					</div>
 

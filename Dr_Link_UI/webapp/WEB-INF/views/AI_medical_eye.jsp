@@ -174,8 +174,11 @@ body {
 								정확한 진단을 위하여 정면에서 촬영한 사진을 업로드 해주세요. <br/>
 					            지나친 메이크업, 얼굴 전체모습,&nbsp; 측면 모습 등은 정확한 AI진단이 어려울수 있습니다.
 							</div>
+									
 							<hr/>
-							
+										<a href="aiTest-success" class="btn btn-primary view-inv-btn">진단결과보기</a>
+									
+							<hr/>
 							
 							
 							<form>

@@ -212,6 +212,9 @@ body {
 									
 									
 							<hr/>
+										<a href="aiTest-success" class="btn btn-primary view-inv-btn">진단결과보기</a>
+									
+							<hr/>
 							
 <div class="card">
 	<div class="card-header text-center">

@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Doccure - Medicine Page</title>
+        <title>Doccure - Specialities Page</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/admin/img/favicon.png">
@@ -181,11 +181,11 @@
 							<li> 
 								<a href="index"><i class="fe fe-home"></i> <span>Dashboard</span></a>
 							</li>
-							<li class="active"> 
-								<a href="appointment-list"><i class="fe fe-layout"></i> <span>예약관리</span></a>
-							</li>
 							<li> 
-								<a href="specialities"><i class="fe fe-users"></i> <span>Specialities</span></a>
+								<a href="appointment-list"><i class="fe fe-layout"></i> <span>Appointments</span></a>
+							</li>
+							<li class="active"> 
+								<a href="specialities"><i class="fe fe-users"></i> <span>진료과목 관리</span></a>
 							</li>
 							<li> 
 								<a href="doctor-list"><i class="fe fe-user-plus"></i> <span>Doctors</span></a>
@@ -303,319 +303,100 @@
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
-							<div class="col-sm-12">
-								<h3 class="page-title">예약관리</h3>
+							<div class="col-sm-7 col-auto">
+								<h3 class="page-title">진료과목 관리</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Dashboard</a></li>
-									<li class="breadcrumb-item active">예약관리</li>
+									<li class="breadcrumb-item active">진료과목</li>
 								</ul>
+							</div>
+							<div class="col-sm-5 col">
+								<a href="#Add_Specialities_details" data-toggle="modal" class="btn btn-primary float-right mt-2">추가</a>
 							</div>
 						</div>
 					</div>
 					<!-- /Page Header -->
 					<div class="row">
-						<div class="col-md-12">
-						
-							<!-- Recent Orders -->
+						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-body">
 									<div class="table-responsive">
 										<table class="datatable table table-hover table-center mb-0">
 											<thead>
 												<tr>
-													<th>의사이름</th>
-													<th>진료과목</th>
-													<th>환자이름</th>
-													<th>예약시간</th>
-													<th>활성화 및 비활성화</th>
-													<th class="text-right">금액</th>
+													<th>진료과목 번호</th>
+													<th>진료과목 명</th>
+													<th class="text-right">수정 및 삭제</th>
 												</tr>
 											</thead>
 											<tbody>
-												<!-- 리스트 -->
 												<tr>
+													<td>#SP001</td>
+													
 													<td>
 														<h2 class="table-avatar">
-															<a href="doctor-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="doctor-profile">홍길동</a>
+															<a href="profile" class="avatar avatar-sm mr-2">
+																<img class="avatar-img" src="${pageContext.request.contextPath}/resources/admin/img/specialities/specialities-01.png" alt="Speciality">
+															</a>
+															<a href="profile">피부과</a>
 														</h2>
 													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="patient-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="patient-profile">김길자 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
+												
 													<td class="text-right">
-														21,400<span>원</span>
+														<div class="actions">
+															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
+																<i class="fe fe-pencil"></i> 수정
+															</a>
+															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
+																<i class="fe fe-trash"></i> 삭제
+															</a>
+														</div>
 													</td>
 												</tr>
-												<!-- 리스트 -->
 												<tr>
+													<td>#SP002</td>
+													
 													<td>
 														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
+															<a href="profile" class="avatar avatar-sm mr-2">
+																<img class="avatar-img" src="${pageContext.request.contextPath}/resources/admin/img/specialities/specialities-02.png" alt="Speciality">
+															</a>
+															<a href="profile">안과</a>
 														</h2>
 													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
+												
+													<td class="text-right">
+														<div class="actions">
+															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
+																<i class="fe fe-pencil"></i> 수정
+															</a>
+															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
+																<i class="fe fe-trash"></i> 삭제
+															</a>
 														</div>
 													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
+												</tr>	
 												<tr>
+													<td>#SP003</td>
+													
 													<td>
 														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
+															<a href="profile" class="avatar avatar-sm mr-2">
+																<img class="avatar-img" src="${pageContext.request.contextPath}/resources/admin/img/specialities/specialities-03.png" alt="Speciality">
+															</a>
+															<a href="profile">정신과</a>
 														</h2>
 													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
+												
 													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
+														<div class="actions">
+															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
+																<i class="fe fe-pencil"></i> 수정
+															</a>
+															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
+																<i class="fe fe-trash"></i> 삭제
+															</a>
 														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
 													</td>
 												</tr>
 											</tbody>
@@ -623,14 +404,105 @@
 									</div>
 								</div>
 							</div>
-							<!-- /Recent Orders -->
-							
-						</div>
+						</div>			
 					</div>
 				</div>			
 			</div>
 			<!-- /Page Wrapper -->
-		
+			
+			
+			<!-- Add Modal -->
+			<div class="modal fade" id="Add_Specialities_details" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document" >
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">진료과목 추가</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="row form-row">
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>진료과목</label>
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>이미지</label>
+											<input type="file"  class="form-control">
+										</div>
+									</div>
+									
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">저장하기</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /ADD Modal -->
+			
+			<!-- Edit Details Modal -->
+			<div class="modal fade" id="edit_specialities_details" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document" >
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">진료과목 수정</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="row form-row">
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>진료과목</label>
+											<input type="text" class="form-control" value="Cardiology">
+										</div>
+									</div>
+									<div class="col-12 col-sm-6">
+										<div class="form-group">
+											<label>이미지</label>
+											<input type="file"  class="form-control">
+										</div>
+									</div>
+									
+								</div>
+								<button type="submit" class="btn btn-primary btn-block">저장하기</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Edit Details Modal -->
+			
+			<!-- Delete Modal -->
+			<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document" >
+					<div class="modal-content">
+					<!--	<div class="modal-header">
+							<h5 class="modal-title">Delete</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>-->
+						<div class="modal-body">
+							<div class="form-content p-2">
+								<h4 class="modal-title">진료과목 삭제</h4>
+								<p class="mb-4">정말로 해당 진료과목을 삭제하시겠습니까?</p>
+								<button type="button" class="btn btn-primary">삭제하기 </button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">취소하기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Delete Modal -->
         </div>
 		<!-- /Main Wrapper -->
 		

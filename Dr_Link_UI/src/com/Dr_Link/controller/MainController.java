@@ -14,6 +14,7 @@ public class MainController {
 	@RequestMapping(value = "{step}")
 	public String name(@PathVariable String step) {
 		System.out.println("main 컨트롤러 요청");
+		System.out.println("main에서 요청된 매핑 페이지 : " + step);
 		return step;
 	}
 	@RequestMapping(value="login")
@@ -42,5 +43,10 @@ public class MainController {
 		return "patients/payment";
 	}
 	
+	@RequestMapping(value = "faq")
+	public String faqGo() {
+		System.out.println("faq 컨트롤러 요청");
+		return "faq";
+	}
 	
 }

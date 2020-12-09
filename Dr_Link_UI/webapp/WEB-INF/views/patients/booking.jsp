@@ -8,20 +8,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="resources/img/favicon.png" rel="icon">
+		<link href="${pageContext.request.contextPath}/resources/img/favicon.png" rel="icon">
 		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/all.min.css">
 		
 		<!-- Daterangepikcer CSS -->
-		<link rel="stylesheet" href="resources/plugins/daterangepicker/daterangepicker.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/daterangepicker/daterangepicker.css">
 		
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 		
 		<!-- 구글폰트 -->
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
@@ -59,7 +59,7 @@ body {
 				</a>
 				<!-- <h1><a id="drlink" href="#" >Dr.Link</a></h1> -->
 				<a href="#" class="menu-logo">
-						<img src="${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
+						<img src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
 					</a>
 					
 			</div>
@@ -147,7 +147,7 @@ body {
 								<div class="card-body">
 									<div class="booking-doc-info">
 										<a href="doctor-profile" class="booking-doc-img">
-											<img src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+											<img src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										</a>
 										<div class="booking-info">
 											<h4><a href="doctor-profile">{김성민} 의사</a></h4>
@@ -419,7 +419,7 @@ body {
 							
 							<!-- Submit Section -->
 							<div class="submit-section proceed-btn text-right">
-								<a href="payment" class="btn btn-primary submit-btn">결제하기</a>
+								<a href="patients/booking-success" class="btn btn-primary submit-btn">예약하기</a>
 							</div>
 							<!-- /Submit Section -->
 							
@@ -561,18 +561,18 @@ body {
 		<!-- /Main Wrapper -->
 	  
 		<!-- jQuery -->
-		<script src="resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="resources/js/popper.min.js"></script>
-		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 		
 		<!-- Daterangepikcer JS -->
-		<script src="resources/js/moment.min.js"></script>
-		<script src="resources/plugins/daterangepicker/daterangepicker.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/moment.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/plugins/daterangepicker/daterangepicker.js"></script>
 		
 		<!-- Custom JS -->
-		<script src="resources/js/script.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 		
 	</body>
 </html>

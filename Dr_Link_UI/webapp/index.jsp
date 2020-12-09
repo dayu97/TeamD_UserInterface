@@ -89,7 +89,7 @@ width:auto !important;
 				
 				<ul class="main-nav" >
 					<li class="has-submenu">
-						<a href="doctor-list">의료진 소개</a>
+						<a href="search">의료진 소개</a>
 					</li>
 					<li class="has-submenu">
 						<a href="notice">공지사항<!-- <i class="fas fa-chevron-down"></i> --></a>
@@ -109,10 +109,10 @@ width:auto !important;
 						<a href="health-blog">건강정보</a>
 					</li>
 					<li class="has-submenu">
-						<a href="faq">FAQ</a>
+						<a href="question">FAQ</a>
 					</li>
 					<li class="has-submenu">
-						<a href="booking">온라인예약</a>
+						<a href="search">온라인예약</a>
 					</li>
 					<li class="has-submenu">
 						<a>온라인 간편 진단<i class="fas fa-chevron-down"></i></a>

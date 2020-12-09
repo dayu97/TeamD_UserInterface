@@ -5,7 +5,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>의사대쉬보드 - Dr.Link</title>
+		<title>의료진 마이페이지 - Dr.Link</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
@@ -64,7 +64,7 @@
 							<li class="has-submenu active">
 								<a href="">Doctors <i class="fas fa-chevron-down"></i></a>
 								<ul class="submenu">
-									<li class="active"><a href="doctor-dashboard">Doctor Dashboard</a></li>
+									<li class="active"><a href="doctor-dashboard">마이페이지</a></li>
 									<li><a href="appointments">Appointments</a></li>
 									<li><a href="schedule-timings">Schedule Timing</a></li>
 									<li><a href="my-patients">Patients List</a></li>
@@ -211,7 +211,7 @@
 									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">대쉬보드</h2>
+							<h2 class="breadcrumb-title">마이페이지</h2>
 						</div>
 					</div>
 				</div>

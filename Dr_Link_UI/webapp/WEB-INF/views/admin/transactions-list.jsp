@@ -5,29 +5,29 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Doccure - Product List Page</title>
+        <title>Doccure - Transactions List Page</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/admin/img/favicon.png">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="resources/css/font-awesome.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/font-awesome.min.css">
 		
 		<!-- Feathericon CSS -->
-        <link rel="stylesheet" href="resources/css/feathericon.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/feathericon.min.css">
 		
 		<!-- Datatables CSS -->
-		<link rel="stylesheet" href="resources/plugins/datatables/datatables.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/plugins/datatables/datatables.min.css">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/style.css">
 		
 		<!--[if lt IE 9]>
-			<script src="resources/js/html5shiv.min.js"></script>
-			<script src="resources/js/respond.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/admin/js/html5shiv.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/admin/js/respond.min.js"></script>
 		<![endif]-->
     </head>
     <body>
@@ -41,10 +41,10 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index" class="logo">
-						<img src="resources/img/logo.png" alt="Logo">
+						<img src="${pageContext.request.contextPath}/resources/admin/img/logo.png" alt="Logo">
 					</a>
 					<a href="index" class="logo logo-small">
-						<img src="resources/img/logo-small.png" alt="Logo" width="30" height="30">
+						<img src="${pageContext.request.contextPath}/resources/admin/img/logo-small.png" alt="Logo" width="30" height="30">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -68,7 +68,7 @@
 				
 				<!-- Header Right Menu -->
 				<ul class="nav user-menu">
-					
+
 					<!-- Notifications -->
 					<li class="nav-item dropdown noti-dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
@@ -85,7 +85,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/doctors/doctor-thumb-01.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Dr. Ruby Perrin</span> Schedule <span class="noti-title">her appointment</span></p>
@@ -98,7 +98,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient1.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Charlene Reed</span> has booked her appointment to <span class="noti-title">Dr. Ruby Perrin</span></p>
@@ -111,7 +111,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient2.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient2.jpg">
 												</span>
 												<div class="media-body">
 												<p class="noti-details"><span class="noti-title">Travis Trimble</span> sent a amount of $210 for his <span class="noti-title">appointment</span></p>
@@ -124,7 +124,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/img/patients/patient3.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient3.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Carl Kelly</span> send a message <span class="noti-title"> to his doctor</span></p>
@@ -145,12 +145,12 @@
 					<!-- User Menu -->
 					<li class="nav-item dropdown has-arrow">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-							<span class="user-img"><img class="rounded-circle" src="resources/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+							<span class="user-img"><img class="rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
 						</a>
 						<div class="dropdown-menu">
 							<div class="user-header">
 								<div class="avatar avatar-sm">
-									<img src="resources/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+									<img src="${pageContext.request.contextPath}/resources/admin/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
 								</div>
 								<div class="user-text">
 									<h6>Ryan Taylor</h6>
@@ -196,7 +196,7 @@
 							<li> 
 								<a href="reviews"><i class="fe fe-star-o"></i> <span>Reviews</span></a>
 							</li>
-							<li> 
+							<li class="active"> 
 								<a href="transactions-list"><i class="fe fe-activity"></i> <span>Transactions</span></a>
 							</li>
 							<li> 
@@ -220,7 +220,7 @@
 									<li><a href="edit-blog"> Edit Blog </a></li>
 								</ul>
 							</li>
-							<li class="active"><a href="product-list"><i class="fe fe-layout"></i> <span>Product List</span></a></li>
+							<li><a href="product-list"><i class="fe fe-layout"></i> <span>Product List</span></a></li>
 							<li><a href="pharmacy-list"><i class="fe fe-vector"></i> <span>Pharmacy List</span></a></li>
 							<li> 
 								<a href="profile"><i class="fe fe-user-plus"></i> <span>Profile</span></a>
@@ -303,19 +303,17 @@
 					<!-- Page Header -->
 					<div class="page-header">
 						<div class="row">
-							<div class="col-sm-7 col-auto">
-								<h3 class="page-title">Product List</h3>
+							<div class="col-sm-12">
+								<h3 class="page-title">결제내역 관리</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Dashboard</a></li>
-									<li class="breadcrumb-item active">Product List</li>
+									<li class="breadcrumb-item active">결제내역</li>
 								</ul>
-							</div>
-							<div class="col-sm-5 col">
-								<a href="#Add_Specialities_details" data-toggle="modal" class="btn btn-primary float-right mt-2">Add</a>
 							</div>
 						</div>
 					</div>
 					<!-- /Page Header -->
+					
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="card">
@@ -324,145 +322,55 @@
 										<table class="datatable table table-hover table-center mb-0">
 											<thead>
 												<tr>
-													<th>#</th>
-													<th>Product Name</th>
-													<th>Price</th>
-													<th>Date</th>
-													<th class="text-right">Actions</th>
+													<th>영수증 번호</th>
+													<th>환자 아이디</th>
+													<th>환자 이름</th>
+													<th>총 금액</th>
+													<th class="text-center">결제 상태</th>
+													<th class="text-right">삭제</th>
 												</tr>
 											</thead>
 											<tbody>
+												<!-- 결제내역 리스트 -->
 												<tr>
-													<td>#SP001</td>
-													
+													<td><a href="invoice">#IN0001</td>
+													<td>hong01</td>
 													<td>
 														<h2 class="table-avatar">
-															<a class="avatar avatar-sm mr-2" data-toggle="modal" href="#edit_specialities_details">
-																<img class="avatar-img rounded-circle" src="resources/img/product/product.jpg" alt="product image">
-															</a>
-															<a data-toggle="modal" href="#edit_specialities_details">Safi Natural Blood Purifier Syrup 200 ml</a>
+															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
+															<a href="profile">홍길숙 </a>
 														</h2>
 													</td>
-
-													<td>$500</td>
-
-													<td>12-05-2020</td>
-												
+													<td>21,400<span>원</span></td>
+													<td class="text-center">
+														<span class="badge badge-pill bg-success inv-badge">결제완료</span>
+													</td>
 													<td class="text-right">
 														<div class="actions">
-															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
-																<i class="fe fe-pencil"></i> Edit
-															</a>
-															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
-																<i class="fe fe-trash"></i> Delete
+															<a class="btn btn-sm bg-danger-light" data-toggle="modal" href="#delete_modal">
+																<i class="fe fe-trash"></i> 삭제
 															</a>
 														</div>
 													</td>
 												</tr>
+												<!-- 결제내역 리스트 -->
 												<tr>
-													<td>#SP002</td>
-													
+													<td><a href="invoice">#IN0002</td>
+													<td>hong02</td>
 													<td>
 														<h2 class="table-avatar">
-															<a class="avatar avatar-sm mr-2" data-toggle="modal" href="#edit_specialities_details">
-																<img class="avatar-img rounded-circle" src="resources/img/product/product.jpg" alt="product image">
-															</a>
-															<a data-toggle="modal" href="#edit_specialities_details">Safi Natural Blood Purifier Syrup 100 ml</a>
+															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
+															<a href="profile">홍길만 </a>
 														</h2>
 													</td>
-
-													<td>$100</td>
-
-													<td>12-05-2020</td>
-												
+													<td>51,400<span>원</span></td>
+													<td class="text-center">
+														<span class="badge badge-pill bg-danger inv-badge">미결제</span>
+													</td>
 													<td class="text-right">
 														<div class="actions">
-															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
-																<i class="fe fe-pencil"></i> Edit
-															</a>
-															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
-																<i class="fe fe-trash"></i> Delete
-															</a>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>#SP003</td>
-													
-													<td>
-														<h2 class="table-avatar">
-															<a class="avatar avatar-sm mr-2" data-toggle="modal" href="#edit_specialities_details">
-																<img class="avatar-img rounded-circle" src="resources/img/product/product.jpg" alt="product image">
-															</a>
-															<a data-toggle="modal" href="#edit_specialities_details">Safi Natural Blood Purifier Syrup 50 ml</a>
-														</h2>
-													</td>
-
-													<td>$600</td>
-
-													<td>12-05-2020</td>
-												
-													<td class="text-right">
-														<div class="actions">
-															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
-																<i class="fe fe-pencil"></i> Edit
-															</a>
-															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
-																<i class="fe fe-trash"></i> Delete
-															</a>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>#SP004</td>
-													
-													<td>
-														<h2 class="table-avatar">
-															<a class="avatar avatar-sm mr-2" data-toggle="modal" href="#edit_specialities_details">
-																<img class="avatar-img rounded-circle" src="resources/img/product/product.jpg" alt="product image">
-															</a>
-															<a data-toggle="modal" href="#edit_specialities_details">Safi Natural Blood Purifier Syrup 200 ml</a>
-														</h2>
-													</td>
-
-													<td>$700</td>
-
-													<td>12-05-2020</td>
-												
-													<td class="text-right">
-														<div class="actions">
-															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
-																<i class="fe fe-pencil"></i> Edit
-															</a>
-															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
-																<i class="fe fe-trash"></i> Delete
-															</a>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>#SP005</td>
-													
-													<td>
-														<h2 class="table-avatar">
-															<a class="avatar avatar-sm mr-2" data-toggle="modal" href="#edit_specialities_details">
-																<img class="avatar-img rounded-circle" src="resources/img/product/product.jpg" alt="product image">
-															</a>
-															<a data-toggle="modal" href="#edit_specialities_details">Safi Natural Blood Purifier Syrup 200 ml</a>
-														</h2>
-													</td>
-
-													<td>$1200</td>
-
-													<td>12-05-2020</td>
-												
-													<td class="text-right">
-														<div class="actions">
-															<a class="btn btn-sm bg-success-light" data-toggle="modal" href="#edit_specialities_details">
-																<i class="fe fe-pencil"></i> Edit
-															</a>
-															<a  data-toggle="modal" href="#delete_modal" class="btn btn-sm bg-danger-light">
-																<i class="fe fe-trash"></i> Delete
+															<a class="btn btn-sm bg-danger-light" data-toggle="modal" href="#delete_modal">
+																<i class="fe fe-trash"></i> 삭제
 															</a>
 														</div>
 													</td>
@@ -477,91 +385,8 @@
 				</div>			
 			</div>
 			<!-- /Page Wrapper -->
-			
-			
-			<!-- Add Modal -->
-			<div class="modal fade" id="Add_Specialities_details" aria-hidden="true" role="dialog">
-				<div class="modal-dialog modal-dialog-centered" role="document" >
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Add Product</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="row form-row">
-									<div class="col-12 col-sm-6">
-										<div class="form-group">
-											<label>Product Name</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-12 col-sm-6">
-										<div class="form-group">
-											<label>Price</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group">
-											<label>Image</label>
-											<input type="file"  class="form-control">
-										</div>
-									</div>
-									
-								</div>
-								<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /ADD Modal -->
-			
-			<!-- Edit Details Modal -->
-			<div class="modal fade" id="edit_specialities_details" aria-hidden="true" role="dialog">
-				<div class="modal-dialog modal-dialog-centered" role="document" >
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Edit Product</h5>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							<form>
-								<div class="row form-row">
-									<div class="col-12 col-sm-6">
-										<div class="form-group">
-											<label>Product Name</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-12 col-sm-6">
-										<div class="form-group">
-											<label>Price</label>
-											<input type="text" class="form-control">
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group">
-											<label>Image</label>
-											<input type="file"  class="form-control">
-										</div>
-									</div>
-									
-								</div>
-								<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /Edit Details Modal -->
-			
-			<!-- Delete Modal -->
+		
+		<!-- Delete Modal -->
 			<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
 				<div class="modal-dialog modal-dialog-centered" role="document" >
 					<div class="modal-content">
@@ -573,35 +398,36 @@
 						</div>-->
 						<div class="modal-body">
 							<div class="form-content p-2">
-								<h4 class="modal-title">Delete</h4>
-								<p class="mb-4">Are you sure want to delete?</p>
-								<button type="button" class="btn btn-primary">Save </button>
-								<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+								<h4 class="modal-title">삭제하기</h4>
+								<p class="mb-4">해당 결제내역을 정말 삭제하시겠습니까?</p>
+								<button type="button" class="btn btn-primary">삭제하기 </button>
+								<button type="button" class="btn btn-danger" data-dismiss="modal">취소하기</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- /Delete Modal -->
+		
         </div>
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="resources/js/jquery-3.2.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="resources/js/popper.min.js"></script>
-        <script src="resources/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/popper.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/bootstrap.min.js"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="resources/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		
 		<!-- Datatables JS -->
-		<script src="resources/plugins/datatables/jquery.dataTables.min.js"></script>
-		<script src="resources/plugins/datatables/datatables.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/admin/plugins/datatables/datatables.min.js"></script>
 		
 		<!-- Custom JS -->
-		<script  src="resources/js/script.js"></script>
+		<script  src="${pageContext.request.contextPath}/resources/admin/js/script.js"></script>
 		
     </body>
 </html>

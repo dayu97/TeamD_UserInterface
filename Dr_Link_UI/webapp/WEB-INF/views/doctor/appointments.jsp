@@ -327,7 +327,7 @@ body {
 											<img src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg" alt="User Image">
 										</a>
 										<div class="profile-det-info">
-											<h3><a href="patient-profile.jsp">고현영</a></h3>
+											<h3><a href="patient-profile">고현영</a></h3>
 											<div class="patient-details">
 												<h5><i class="far fa-clock"></i> 2020-11-30, 10:00 AM</h5>
 												<h5><i class="fas fa-map-marker-alt"></i> 서울시 금천구 가산동</h5>

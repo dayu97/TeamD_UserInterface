@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-        <title>Doccure - Medicine Page</title>
+        <title>Doccure - Patient List Page</title>
 		
 		<!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/admin/img/favicon.png">
@@ -68,7 +68,7 @@
 				
 				<!-- Header Right Menu -->
 				<ul class="nav user-menu">
-					
+
 					<!-- Notifications -->
 					<li class="nav-item dropdown noti-dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
@@ -171,7 +171,7 @@
 			<!-- /Header -->
 			
 			<!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
+          <div class="sidebar" id="sidebar">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
@@ -181,8 +181,8 @@
 							<li> 
 								<a href="index"><i class="fe fe-home"></i> <span>Dashboard</span></a>
 							</li>
-							<li class="active"> 
-								<a href="appointment-list"><i class="fe fe-layout"></i> <span>예약관리</span></a>
+							<li> 
+								<a href="appointment-list"><i class="fe fe-layout"></i> <span>Appointments</span></a>
 							</li>
 							<li> 
 								<a href="specialities"><i class="fe fe-users"></i> <span>Specialities</span></a>
@@ -190,7 +190,7 @@
 							<li> 
 								<a href="doctor-list"><i class="fe fe-user-plus"></i> <span>Doctors</span></a>
 							</li>
-							<li> 
+							<li class="active"> 
 								<a href="patient-list"><i class="fe fe-user"></i> <span>Patients</span></a>
 							</li>
 							<li> 
@@ -304,329 +304,94 @@
 					<div class="page-header">
 						<div class="row">
 							<div class="col-sm-12">
-								<h3 class="page-title">예약관리</h3>
+								<h3 class="page-title">환자목록</h3>
 								<ul class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index">Dashboard</a></li>
-									<li class="breadcrumb-item active">예약관리</li>
+									<li class="breadcrumb-item"><a href="javascript:(0);">Users</a></li>
+									<li class="breadcrumb-item active">환자</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<!-- /Page Header -->
+					
 					<div class="row">
-						<div class="col-md-12">
-						
-							<!-- Recent Orders -->
+						<div class="col-sm-12">
 							<div class="card">
 								<div class="card-body">
 									<div class="table-responsive">
+										<div class="table-responsive">
 										<table class="datatable table table-hover table-center mb-0">
 											<thead>
 												<tr>
-													<th>의사이름</th>
-													<th>진료과목</th>
-													<th>환자이름</th>
-													<th>예약시간</th>
-													<th>활성화 및 비활성화</th>
-													<th class="text-right">금액</th>
+													<th>환자 아이디</th>
+													<th>환자 이메일</th>
+													<th>환자 이름</th>
+													<th>나이</th>
+													<th>주소</th>
+													<th>연락처</th>
+													<th>최근 방문</th>
+													<th class="text-right">결제한 금액</th>
 												</tr>
 											</thead>
 											<tbody>
-												<!-- 리스트 -->
+											<!-- 환자 목록 -->
 												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="doctor-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="doctor-profile">홍길동</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="patient-profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="patient-profile">김길자 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
+													<td>hong01</td>
+													<td>hong01@gmail.com</td>
 													<td>
 														<h2 class="table-avatar">
 															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
+															<a href="profile">홍길숙 </a>
 														</h2>
 													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
+													<td>29</td>
+													<td>서울특별시 금천구 가산동 426-5 월드 메르디앙 벤처 센터 2 차 410 호</td>
+													<td>01012345678</td>
+													<td>2019년 12월 12일</td>
+													<td class="text-right">211,400<span>원</span></td>
 												</tr>
-												<!-- 리스트 -->
+											<!-- 환자 목록 -->
 												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
+													<td>hong01</td>
+													<td>hong01@gmail.com</td>
 													<td>
 														<h2 class="table-avatar">
 															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
+															<a href="profile">홍길숙 </a>
 														</h2>
 													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
+													<td>29</td>
+													<td>서울특별시 금천구 가산동 426-5 월드 메르디앙 벤처 센터 2 차 410 호</td>
+													<td>01012345678</td>
+													<td>2019년 12월 12일</td>
+													<td class="text-right">211,400<span>원</span></td>
 												</tr>
-												<!-- 리스트 -->
+											<!-- 환자 목록 -->
 												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
+													<td>hong01</td>
+													<td>hong01@gmail.com</td>
 													<td>
 														<h2 class="table-avatar">
 															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
+															<a href="profile">홍길숙 </a>
 														</h2>
 													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
-												</tr>
-												<!-- 리스트 -->
-												<tr>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="User Image"></a>
-															<a href="profile">홍길자</a>
-														</h2>
-													</td>
-													<td>피부과</td>
-													<td>
-														<h2 class="table-avatar">
-															<a href="profile" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg" alt="User Image"></a>
-															<a href="profile">김길동 </a>
-														</h2>
-													</td>
-													<td>2019년 10월 10일 <span class="text-primary d-block">11.00 오전 - 11.15 오전</span></td>
-													<td>
-														<div class="status-toggle">
-															<input type="checkbox" id="status_1" class="check" checked>
-															<label for="status_1" class="checktoggle">checkbox</label>
-														</div>
-													</td>
-													<td class="text-right">
-														21,400<span>원</span>
-													</td>
+													<td>29</td>
+													<td>서울특별시 금천구 가산동 426-5 월드 메르디앙 벤처 센터 2 차 410 호</td>
+													<td>01012345678</td>
+													<td>2019년 12월 12일</td>
+													<td class="text-right">211,400<span>원</span></td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
+									</div>
 								</div>
 							</div>
-							<!-- /Recent Orders -->
-							
-						</div>
+						</div>			
 					</div>
+					
 				</div>			
 			</div>
 			<!-- /Page Wrapper -->
