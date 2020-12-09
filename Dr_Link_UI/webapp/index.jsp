@@ -616,7 +616,7 @@ width:auto !important;
 					<!-- Blog Post -->
 					<div class="blog grid-blog">
 						<div class="blog-image">
-							<a href="blog-details"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-01.jpg" alt="Post Image"></a>
+							<a href="blog-details"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-02.jpg" alt="Post Image"></a>
 						</div>
 						<div class="blog-content">
 							건강소식 컨텐츠 들어갈 예정
@@ -658,7 +658,7 @@ width:auto !important;
 					<!-- Blog Post -->
 					<div class="blog grid-blog">
 						<div class="blog-image">
-							<a href="blog-details"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-04.jpg" alt="Post Image"></a>
+							<a href="blog-details"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/img/blog/blog-02.jpg" alt="Post Image"></a>
 						</div>
 						<div class="blog-content">
 							건강소식 컨텐츠 들어갈 예정

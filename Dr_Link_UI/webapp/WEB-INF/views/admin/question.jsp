@@ -8,29 +8,29 @@
         <title>질문게시판관리 - Dr.Link</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="resources/admin/img/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/admin/img/favicon.png">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="resources/admin/css/bootstrap.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="resources/admin/css/font-awesome.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/font-awesome.min.css">
         <!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="resources/admin/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="resources/admin/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/plugins/fontawesome/css/all.min.css">
 		
 		<!-- Feathericon CSS -->
-        <link rel="stylesheet" href="resources/admin/css/feathericon.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/feathericon.min.css">
 		
 		<!-- Datatables CSS -->
-		<link rel="stylesheet" href="resources/admin/plugins/datatables/datatables.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/plugins/datatables/datatables.min.css">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="resources/admin/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/style.css">
 		
 		<!--[if lt IE 9]>
-			<script src="resources/admin/js/html5shiv.min.js"></script>
-			<script src="resources/admin/js/respond.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/admin/js/html5shiv.min.js"></script>
+			<script src="${pageContext.request.contextPath}/resources/admin/js/respond.min.js"></script>
 		<![endif]-->
     </head>
     <body>
@@ -44,10 +44,7 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index" class="logo">
-						<img src="resources/admin/img/logo.png" alt="Logo">
-					</a>
-					<a href="index" class="logo logo-small">
-						<img src="resources/admin/img/logo-small.png" alt="Logo" width="30" height="30">
+						<img src="${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -88,7 +85,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/doctors/doctor-thumb-01.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Dr. Ruby Perrin</span> Schedule <span class="noti-title">her appointment</span></p>
@@ -101,7 +98,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient1.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient1.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Charlene Reed</span> has booked her appointment to <span class="noti-title">Dr. Ruby Perrin</span></p>
@@ -114,7 +111,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient2.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient2.jpg">
 												</span>
 												<div class="media-body">
 												<p class="noti-details"><span class="noti-title">Travis Trimble</span> sent a amount of $210 for his <span class="noti-title">appointment</span></p>
@@ -127,7 +124,7 @@
 										<a href="#">
 											<div class="media">
 												<span class="avatar avatar-sm">
-													<img class="avatar-img rounded-circle" alt="User Image" src="resources/admin/img/patients/patient3.jpg">
+													<img class="avatar-img rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/admin/img/patients/patient3.jpg">
 												</span>
 												<div class="media-body">
 													<p class="noti-details"><span class="noti-title">Carl Kelly</span> send a message <span class="noti-title"> to his doctor</span></p>
@@ -148,12 +145,12 @@
 					<!-- User Menu -->
 					<li class="nav-item dropdown has-arrow">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-							<span class="user-img"><img class="rounded-circle" src="resources/admin/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+							<span class="user-img"><img class="rounded-circle" src="${pageContext.request.contextPath}/resources/admin/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
 						</a>
 						<div class="dropdown-menu">
 							<div class="user-header">
 								<div class="avatar avatar-sm">
-									<img src="resources/admin/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+									<img src="${pageContext.request.contextPath}/resources/admin/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
 								</div>
 								<div class="user-text">
 									<h6>Ryan Taylor</h6>
@@ -217,10 +214,10 @@
 							<li class="submenu">
 								<a href="#"><i class="fe fe-document"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="blog.jsp" class="active"> Blog </a></li>
-									<li><a href="blog-details.jsp"> Blog Details</a></li>
-									<li><a href="add-blog.jsp"> Add Blog </a></li>
-									<li><a href="edit-blog.jsp"> Edit Blog </a></li>
+									<li><a href="blog" class="active"> Blog </a></li>
+									<li><a href="blog-details"> Blog Details</a></li>
+									<li><a href="add-blog"> Add Blog </a></li>
+									<li><a href="edit-blog"> Edit Blog </a></li>
 								</ul>
 							</li>
 							<li><a href="product-list"><i class="fe fe-layout"></i> <span>Product List</span></a></li>
@@ -325,18 +322,18 @@
                                     <div class="col">
                                         <ul class="nav nav-tabs nav-tabs-solid">
                                            <li class="nav-item">
-                                                <a class="nav-link active" href="notice.jsp">공지사항/병원소식</a>
+                                                <a class="nav-link active" href="notice">공지사항/병원소식</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="health-info.jsp">건강정보</a>
+                                                <a class="nav-link" href="health-info">건강정보</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="question.jsp">자주하는질문</a>
+                                                <a class="nav-link active" href="question">자주하는질문</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="btn btn-primary btn-sm" href="add-blog.jsp"><i class="fas fa-plus mr-1"></i> 게시글 추가</a>
+                                        <a class="btn btn-primary btn-sm" href="add-blog"><i class="fas fa-plus mr-1"></i> 게시글 추가</a>
                                     </div>
                                 </div>
 							
@@ -348,13 +345,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-01.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-01.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-01.jpg" alt="Post Author"> <span>관리자</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-01.jpg" alt="Post Author"> <span>관리자</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -363,7 +360,7 @@
 												<p class="mb-0">수납 관련</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -376,13 +373,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-02.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-02.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-02.jpg" alt="Post Author"> <span>관리자</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-02.jpg" alt="Post Author"> <span>관리자</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-15</li>
@@ -391,7 +388,7 @@
 												<p class="mb-0">진료 관련</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -404,13 +401,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-03.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-03.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-03.jpg" alt="Post Author"> <span>관리자</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-03.jpg" alt="Post Author"> <span>관리자</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -419,7 +416,7 @@
 												<p class="mb-0">홈페이지 이용 관련</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -432,13 +429,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-04.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-04.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-04.jpg" alt="Post Author"> <span>Dr. Sofia Brient</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-04.jpg" alt="Post Author"> <span>Dr. Sofia Brient</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -447,7 +444,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -460,13 +457,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-05.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-05.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-05.jpg" alt="Post Author"> <span>관리자</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-05.jpg" alt="Post Author"> <span>관리자</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -475,7 +472,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -488,13 +485,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-06.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-06.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-06.jpg" alt="Post Author"> <span>관리자</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-06.jpg" alt="Post Author"> <span>관리자</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -503,7 +500,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -516,13 +513,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-07.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-07.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-07.jpg" alt="Post Author"> <span>Dr. Linda Tobin</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-07.jpg" alt="Post Author"> <span>Dr. Linda Tobin</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 2020-11-30</li>
@@ -531,7 +528,7 @@
 												<p class="mb-0">병원 휴진 안내 사항</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> 수정</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> 삭제</a></div>
 											</div>
@@ -544,13 +541,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-08.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-08.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-08.jpg" alt="Post Author"> <span>Dr. Paul Richard </span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-08.jpg" alt="Post Author"> <span>Dr. Paul Richard </span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 25 Nov 2019</li>
@@ -559,7 +556,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
@@ -572,13 +569,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-09.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-09.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-09.jpg" alt="Post Author"> <span>Dr. John Gibbs</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-09.jpg" alt="Post Author"> <span>Dr. John Gibbs</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 24 Nov 2019</li>
@@ -587,7 +584,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
@@ -600,13 +597,13 @@
 										<!-- Blog Post -->
 										<div class="blog grid-blog">
 											<div class="blog-image">
-												<a href="#"><img class="img-fluid" src="resources/admin/img/blog/blog-10.jpg" alt="Post Image"></a>
+												<a href="#"><img class="img-fluid" src="${pageContext.request.contextPath}/resources/admin/img/blog/blog-10.jpg" alt="Post Image"></a>
 											</div>
 											<div class="blog-content">
 												<ul class="entry-meta meta-item">
 													<li>
 														<div class="post-author">
-															<a href="profile"><img src="resources/admin/img/doctors/doctor-thumb-10.jpg" alt="Post Author"> <span>Dr. Olga Barlow</span></a>
+															<a href="profile"><img src="${pageContext.request.contextPath}/resources/admin/img/doctors/doctor-thumb-10.jpg" alt="Post Author"> <span>Dr. Olga Barlow</span></a>
 														</div>
 													</li>
 													<li><i class="far fa-clock"></i> 23 Nov 2019</li>
@@ -615,7 +612,7 @@
 												<p class="mb-0">Lorem ipsum dolor sit amet, consectetur em adipiscing elit, sed do eiusmod tempor.</p>
 											</div>
 											<div class="row pt-3">
-												<div class="col"><a href="edit-blog.jsp" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
+												<div class="col"><a href="edit-blog" class="text-success"><i class="far fa-edit"></i> Edit</a></div>
 																											
 												<div class="col text-right"><a href="javascript:void(0);" class="text-danger" data-toggle="modal" data-target="#deleteNotConfirmModal"><i class="far fa-trash-alt"></i> Inactive</a></div>
 											</div>
@@ -687,13 +684,13 @@
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="acc_title">Inactive Service?</h5>
+						<h5 class="modal-title" id="acc_title">삭제하시겠습니까?</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">×</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p id="acc_msg">Service is Booked and Inprogress..</p>
+						<p id="acc_msg">글을 삭제하시면 다시 복구할 수 없습니다</p>
 					</div>
 					<div class="modal-footer">
 						
@@ -705,21 +702,21 @@
 		<!-- /Model -->
 		
 		<!-- jQuery -->
-        <script src="resources/admin/js/jquery-3.2.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/jquery-3.2.1.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="resources/admin/js/popper.min.js"></script>
-        <script src="resources/admin/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/popper.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/js/bootstrap.min.js"></script>
 		
 		<!-- Slimscroll JS -->
-        <script src="resources/admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="${pageContext.request.contextPath}/resources/admin/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		
 		<!-- Datatables JS -->
-		<script src="resources/admin/plugins/datatables/jquery.dataTables.min.js"></script>
-		<script src="resources/admin/plugins/datatables/datatables.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/admin/plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/admin/plugins/datatables/datatables.min.js"></script>
 		
 		<!-- Custom JS -->
-		<script  src="resources/admin/js/script.js"></script>
+		<script  src="${pageContext.request.contextPath}/resources/admin/js/script.js"></script>
 		
     </body>
 </html>

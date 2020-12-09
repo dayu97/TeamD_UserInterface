@@ -41,10 +41,7 @@
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="index" class="logo">
-						<img src="${pageContext.request.contextPath}/resources/admin/img/logo.png" alt="Logo">
-					</a>
-					<a href="index" class="logo logo-small">
-						<img src="${pageContext.request.contextPath}/resources/admin/img/logo-small.png" alt="Logo" width="30" height="30">
+						<img src="${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
 					</a>
                 </div>
 				<!-- /Logo -->
