@@ -68,10 +68,6 @@ width:auto !important;
 
 	<!-- Main Wrapper -->
 <div class="main-wrapper">
-<!-- 로고 왼쪽으로 
-진료과 가운데 정렬
-
- -->
 	<!-- Header -->
 	<header class="header">
 		<nav class="navbar navbar-expand-lg header-nav">

@@ -9,20 +9,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 		
 		<!-- Favicons -->
-		<link href="resources/img/favicon.png" rel="icon">
+		<link href="${pageContext.request.contextPath}/resources/img/favicon.png" rel="icon">
 		
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 		
 		<!-- Fontawesome CSS -->
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/fontawesome.min.css">
-		<link rel="stylesheet" href="resources/plugins/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fontawesome/css/all.min.css">
 		
 		<!-- Fancybox CSS -->
-		<link rel="stylesheet" href="resources/plugins/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/plugins/fancybox/jquery.fancybox.min.css">
 		
 		<!-- Main CSS -->
-		<link rel="stylesheet" href="resources/css/style.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css">
 		
 	<!-- 구글폰트 -->
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&amp;subset=korean" rel="stylesheet">
@@ -33,6 +33,10 @@
 body {
     font-family: "Nanum Gothic", sans-serif;
 }
+
+.footer-menu{
+	color:#fff;
+}
 </style>
 	
 	</head>
@@ -42,149 +46,76 @@ body {
 		<div class="main-wrapper">
 		
 			<!-- Header -->
-			<header class="header">
-				<nav class="navbar navbar-expand-lg header-nav">
-					<div class="navbar-header">
-						<a id="mobile_btn" href="javascript:void(0);">
-							<span class="bar-icon">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-						</a>
-						<a href="index" class="navbar-brand logo">
-							<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
-						</a>
-					</div>
-					<div class="main-menu-wrapper">
-						<div class="menu-header">
-							<a href="index" class="menu-logo">
-								<img src="resources/img/logo.png" class="img-fluid" alt="Logo">
-							</a>
-							<a id="menu_close" class="menu-close" href="javascript:void(0);">
-								<i class="fas fa-times"></i>
-							</a>
-						</div>
-						<ul class="main-nav">
-							<li>
-								<a href="index">Home</a>
-							</li>
+	<header class="header">
+		<nav class="navbar navbar-expand-lg header-nav">
+			<div class="navbar-header">
+				<a id="mobile_btn" href="javascript:void(0);">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				<!-- <h1><a id="drlink" href="#" >Dr.Link</a></h1> -->
+				<a href="#" class="menu-logo">
+						<img src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/resources/img/logo.jpg" class="img-fluid" alt="Logo">
+					</a>
+					
+			</div>
+			<div class="main-menu-wrapper">
+				
+				<ul class="main-nav" >
+					<li class="has-submenu">
+						<a href="doctor-list">의료진 소개</a>
+					</li>
+					<li class="has-submenu">
+						<a href="notice">공지사항<!-- <i class="fas fa-chevron-down"></i> --></a>
+						<!-- <ul class="submenu">
+							<li><a href="doctor-dashboard">Doctor Dashboard</a></li>
 							<li class="has-submenu">
-								<a href="">Doctors <i class="fas fa-chevron-down"></i></a>
+								<a href="doctor-blog">Blog</a>
 								<ul class="submenu">
-									<li><a href="doctor-dashboard">Doctor Dashboard</a></li>
-									<li><a href="appointments">Appointments</a></li>
-									<li><a href="schedule-timings">Schedule Timing</a></li>
-									<li><a href="my-patients">Patients List</a></li>
-									<li><a href="patient-profile">Patients Profile</a></li>
-									<li><a href="chat-doctor">Chat</a></li>
-									<li><a href="invoices">Invoices</a></li>
-									<li><a href="doctor-profile-settings">Profile Settings</a></li>
-									<li><a href="reviews">Reviews</a></li>
-									<li><a href="doctor-register">Doctor Register</a></li>
-									<li class="has-submenu">
-										<a href="doctor-blog">Blog</a>
-										<ul class="submenu">
-											<li><a href="doctor-blog">Blog</a></li>
-											<li><a href="blog-details">Blog view</a></li>
-											<li><a href="doctor-add-blog">Add Blog</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>	
-							<li class="has-submenu active">
-								<a href="">Patients <i class="fas fa-chevron-down"></i></a>
-								<ul class="submenu">
-									<li class="has-submenu">
-										<a href="#">Doctors</a>
-										<ul class="submenu">
-											<li><a href="map-grid">Map Grid</a></li>
-											<li><a href="map-list">Map List</a></li>
-										</ul>
-									</li>
-									<li><a href="search">Search Doctor</a></li>
-									<li class="active"><a href="doctor-profile">Doctor Profile</a></li>
-									<li><a href="booking">Booking</a></li>
-									<li><a href="checkout">Checkout</a></li>
-									<li><a href="booking-success">Booking Success</a></li>
-									<li><a href="patient-dashboard">Patient Dashboard</a></li>
-									<li><a href="favourites">Favourites</a></li>
-									<li><a href="chat">Chat</a></li>
-									<li><a href="profile-settings">Profile Settings</a></li>
-									<li><a href="change-password">Change Password</a></li>
-								</ul>
-							</li>	
-							<li class="has-submenu">
-								<a href="">Pharmacy <i class="fas fa-chevron-down"></i></a>
-								<ul class="submenu">
-									<li><a href="pharmacy-index">Pharmacy</a></li>
-									<li><a href="pharmacy-details">Pharmacy Details</a></li>
-									<li><a href="pharmacy-search">Pharmacy Search</a></li>
-									<li><a href="product-all">Product</a></li>
-									<li><a href="product-description">Product Description</a></li>
-									<li><a href="cart">Cart</a></li>
-									<li><a href="product-checkout">Product Checkout</a></li>
-									<li><a href="payment-success">Payment Success</a></li>
+									<li><a href="doctor-blog">Blog</a></li>
+									<li><a href="blog-details">Blog view</a></li>
+									<li><a href="doctor-add-blog">Add Blog</a></li>
 								</ul>
 							</li>
-							<li class="has-submenu">
-								<a href="">Pages <i class="fas fa-chevron-down"></i></a>
-								<ul class="submenu">
-									<li><a href="voice-call">Voice Call</a></li>
-									<li><a href="video-call">Video Call</a></li>
-									<li><a href="search">Search Doctors</a></li>
-									<li><a href="calendar">Calendar</a></li>
-									<li><a href="components">Components</a></li>
-									<li class="has-submenu">
-										<a href="invoices">Invoices</a>
-										<ul class="submenu">
-											<li><a href="invoices">Invoices</a></li>
-											<li><a href="invoice-view">Invoice View</a></li>
-										</ul>
-									</li>
-									<li><a href="blank-page">Starter Page</a></li>
-									<li><a href="login">Login</a></li>
-									<li><a href="register">Register</a></li>
-									<li><a href="forgot-password">Forgot Password</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu">
-								<a href="">Blog <i class="fas fa-chevron-down"></i></a>
-								<ul class="submenu">
-									<li><a href="blog-list">Blog List</a></li>
-									<li><a href="blog-grid">Blog Grid</a></li>
-									<li><a href="blog-details">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="has-submenu">
-								<a href="#" target="_blank">Admin <i class="fas fa-chevron-down"></i></a>
-								<ul class="submenu">
-									<li><a href="admin/index" target="_blank">Admin</a></li>
-									<li><a href="pharmacy/index" target="_blank">Pharmacy Admin</a></li>
-								</ul>
-							</li>
-							<li class="login-link">
-								<a href="login">Login / Signup</a>
-							</li>
-						</ul>	 
-					</div>		 
-					<ul class="nav header-navbar-rht">
-						<li class="nav-item contact-item">
-							<div class="header-contact-img">
-								<i class="far fa-hospital"></i>							
-							</div>
-							<div class="header-contact-detail">
-								<p class="contact-header">Contact</p>
-								<p class="contact-info-header"> +1 315 369 5943</p>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link header-login" href="login">login / Signup </a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<!-- /Header -->
+						</ul> -->
+					</li>	
+					<li class="has-submenu">
+						<a href="health-blog">건강정보</a>
+					</li>
+					<li class="has-submenu">
+						<a href="faq">FAQ</a>
+					</li>
+					<li class="has-submenu">
+						<a href="booking">온라인예약</a>
+					</li>
+					<li class="has-submenu">
+						<a href="">온라인 간편 진단<i class="fas fa-chevron-down"></i></a>
+						<ul class="submenu">
+							<li><a href="AI_medical_eye">안과진단</a></li>
+							<li><a href="AI_medical_skin">피부과진단</a></li>
+							<!--  <li><a href="pharmacy-index">AI진단</a></li> -->
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="dashboard">마이페이지<!-- <i class="fas fa-chevron-down"></i> --></a>
+						<!-- <ul class="submenu">
+							<li><a href="invoices">결제내역</a></li>
+						</ul> -->
+					</li>
+				</ul>		 
+			</div>		 
+			<ul class="nav header-navbar-rht">
+				
+				<li class="nav-item">
+					<a class="nav-link header-login" href="login">로그인 / 회원가입</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- /Header -->
 			
 			<!-- Breadcrumb -->
 			<div class="breadcrumb-bar">
@@ -214,12 +145,12 @@ body {
 							<div class="doctor-widget">
 								<div class="doc-info-left">
 									<div class="doctor-img">
-										<img src="resources/img/doctors/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
+										<img src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" class="img-fluid" alt="User Image">
 									</div>
 									<div class="doc-info-cont">
 										<h4 class="doc-name">김길동</h4>
 										<p class="doc-speciality">피부과 - 탈모, 원형탈모, 피부종양, 흉터치료, 켈로이드 치료, 백반증, 미용시술 </p>
-										<p class="doc-department"><img src="resources/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</p>
+										<p class="doc-department"><img src="${pageContext.request.contextPath}/resources/img/specialities/specialities-05.png" class="img-fluid" alt="Speciality">Dentist</p>
 										<div class="rating">
 											<i class="fas fa-star filled"></i>
 											<i class="fas fa-star filled"></i>
@@ -415,7 +346,7 @@ body {
 											<!-- Comment List -->
 											<li>
 												<div class="comment">
-													<img class="avatar avatar-sm rounded-circle" alt="User Image" src="resources/img/patients/patient.jpg">
+													<img class="avatar avatar-sm rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/img/patients/patient.jpg">
 													<div class="comment-body col-lg-11">
 														<div class="meta-data">
 															<span class="comment-author">김**</span>
@@ -453,7 +384,7 @@ body {
 												<!-- <ul class="comments-reply">
 													<li>
 														<div class="comment">
-															<img class="avatar avatar-sm rounded-circle" alt="User Image" src="resources/img/patients/patient1.jpg">
+															<img class="avatar avatar-sm rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/img/patients/patient1.jpg">
 															<div class="comment-body">
 																<div class="meta-data">
 																	<span class="comment-author">Charlene Reed</span>
@@ -498,7 +429,7 @@ body {
 											<!-- Comment List -->
 											<li>
 												<div class="comment">
-													<img class="avatar avatar-sm rounded-circle" alt="User Image" src="resources/img/patients/patient2.jpg">
+													<img class="avatar avatar-sm rounded-circle" alt="User Image" src="${pageContext.request.contextPath}/resources/img/patients/patient2.jpg">
 													<div class="comment-body col-lg-11">
 														<div class="meta-data">
 															<span class="comment-author">박**</span>
@@ -824,7 +755,7 @@ body {
 							<div class="call-wrapper">
 								<div class="call-inner">
 									<div class="call-user">
-										<img alt="User Image" src="resources/img/doctors/doctor-thumb-02.jpg" class="call-avatar">
+										<img alt="User Image" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" class="call-avatar">
 										<h4>Dr. Darren Elder</h4>
 										<span>Connecting...</span>
 									</div>							
@@ -854,7 +785,7 @@ body {
 							<div class="call-wrapper">
 								<div class="call-inner">
 									<div class="call-user">
-										<img class="call-avatar" src="resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+										<img class="call-avatar" src="${pageContext.request.contextPath}/resources/img/doctors/doctor-thumb-02.jpg" alt="User Image">
 										<h4>Dr. Darren Elder</h4>
 										<span>Calling ...</span>
 									</div>							
@@ -874,17 +805,17 @@ body {
 		<!-- Video Call Modal -->
 		
 		<!-- jQuery -->
-		<script src="resources/js/jquery.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script>
 		
 		<!-- Bootstrap Core JS -->
-		<script src="resources/js/popper.min.js"></script>
-		<script src="resources/js/bootstrap.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/popper.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/bootstrap.min.js"></script>
 		
 		<!-- Fancybox JS -->
-		<script src="resources/plugins/fancybox/jquery.fancybox.min.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/plugins/fancybox/jquery.fancybox.min.js"></script>
 		
 		<!-- Custom JS -->
-		<script src="resources/js/script.js"></script>
+		<script src="${pageContext.request.contextPath}/resources/js/script.js"></script>
 		
 	</body>
 </html>

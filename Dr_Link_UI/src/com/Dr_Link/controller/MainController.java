@@ -31,14 +31,14 @@ public class MainController {
 
 	@RequestMapping(value = "booking")
 	public String booking() {
-		System.out.println("patients 컨트롤러 요청");
+		System.out.println("booking 컨트롤러 요청");
 		return "patients/booking";
 	}
 	
 
 	@RequestMapping(value = "payment")
 	public String payment() {
-		System.out.println("patients 컨트롤러 요청");
+		System.out.println("payment 컨트롤러 요청");
 		return "patients/payment";
 	}
 	

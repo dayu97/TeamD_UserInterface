@@ -17,8 +17,8 @@ public class PatientController {
 
 	@RequestMapping(value = "doctor-profile")
 	public String doctor_profile() {
-		System.out.println("patients 컨트롤러 요청");
-		return "doctor-profile";
+		System.out.println("patients doctor-profile 컨트롤러 요청");
+		return "redirect:doctor-profile";
 	}
 	
 	
