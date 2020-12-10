@@ -401,43 +401,7 @@
 							</div>
 							<!-- /About Me -->
 							
-							<!-- Clinic Info -->
-							<div class="card">
-								<div class="card-body">
-									<h4 class="card-title">병원 정보</h4>
-									<div class="row form-row">
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>병원 이름</label>
-												<input type="text" class="form-control">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group">
-												<label>병원 주소</label>
-												<input type="text" class="form-control">
-											</div>
-										</div>
-										<div class="col-md-12">
-											<div class="form-group">
-												<label>병원 사진</label>
-												<form action="#" class="dropzone"></form>
-											</div>
-											<div class="upload-wrap">
-												<div class="upload-images">
-													<img src="${pageContext.request.contextPath}/resources/img/features/feature-01.jpg" alt="Upload Image">
-													<a href="javascript:void(0);" class="btn btn-icon btn-danger btn-sm"><i class="far fa-trash-alt"></i></a>
-												</div>
-												<div class="upload-images">
-													<img src="${pageContext.request.contextPath}/resources/img/features/feature-02.jpg" alt="Upload Image">
-													<a href="javascript:void(0);" class="btn btn-icon btn-danger btn-sm"><i class="far fa-trash-alt"></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /Clinic Info -->
+							
 
 							<!-- Contact Details
 							<div class="card contact-card">
@@ -487,7 +451,7 @@
 							 /Contact Details -->
 							
 							<!-- Pricing -->
-							<div class="card">
+							<!-- <div class="card">
 								<div class="card-body">
 									<h4 class="card-title">가격</h4>
 									
@@ -513,7 +477,7 @@
 									</div>
 									
 								</div>
-							</div>
+							</div> -->
 							<!-- /Pricing -->
 							
 							<!-- Services and Specialization -->
