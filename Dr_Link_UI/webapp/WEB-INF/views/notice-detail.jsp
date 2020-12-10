@@ -10,7 +10,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1.0, user-scalable=0">
-<title>자주 묻는 질문 - Dr.Link</title>
+<title>공지사항</title>
 
 <!-- Favicons -->
 <link type="image/x-icon" href="resources/img/favicon.png" rel="icon">
@@ -80,7 +80,7 @@ ul .bxslider {
 <script>
 	function selChange() {
 		var sel = document.getElementById('cntPerPage').value;
-		location.href = "boardList?nowPage=${paging.nowPage}&cntPerPage=" + sel;
+		location.href="boardList?nowPage=${paging.nowPage}&cntPerPage="+sel;
 	}
 </script>
 </head>
@@ -111,13 +111,13 @@ ul .bxslider {
 					</div>
 					<ul class="main-nav">
 						<li class="active"><a href="index.jsp">Home</a></li>
-						<li class="has-submenu"><a href="notice">공지사항 <i
-								class="fas fa-chevron-down"></i>
-						</a>
-							<ul class="submenu">
-								<li><a href="Q&A">Q&A</a></li>
-
-							</ul></li>
+						<li class="has-submenu">
+						<a href="notice">공지사항 <i class="fas fa-chevron-down"></i> </a>
+						<ul class="submenu">
+							<li><a href="Q&A">Q&A</a></li>
+							
+						</ul>
+					</li>
 						<li class="has-submenu"><a href="patients/booking">온라인예약</a>
 
 						</li>
@@ -168,80 +168,69 @@ ul .bxslider {
 			</div>
 		</div>
 		<!-- /Breadcrumb -->
-		
-		<div class="row pt-3 justify-content-center">
-            <div class="col-md-10 accordion-section">
-                <div class="accordion-content">
+	<div class="content" style="transform: none; min-height: 121px;">
+				<div class="container" style="transform: none;">
+					<div class="row" style="transform: none;">
+						<div class="col-lg-12 col-md-12">
+						
+							<div class="blog-view">
+								<!-- Section Header -->
+							<div class="blog blog-single-post text-center">
+							<div class="section-header text-center" style="margin: auto !important;">
+								<h2>공지사항</h2>
+								<p class="sub-title">Dr.Link의 공지사항을 알려드립니다.</p>
+							</div>
+							<!-- /Section Header -->
+								<hr>
+								<br>
+									<h3 class="blog-title">2020년 11월 의료정보시스템 정기점검 안내 </h3>
+									
+								<br>
+								<hr>
+									<div class="blog-content text-center">
+										<p>병원 의료정보시스템 점검이 다음과 같이 진행될 예정입니다.</p>
+										
+										  <p>- 작업일시 -</p>
+										  <p> 20년 11월 21일(토), 새벽 01:00 ~ 03:00 (2시간)</p>
+										<p> <Strong>해당 시간에는 응급실 등 병원 업무가 원활하지 않을 수 있습니다.</Strong></p>
+										<p>병원 이용에 참고해 주시기 바랍니다.</p>
+									</div>
+								</div>
+								<div class="submit-section" style="margin-bottom: 5px; float: right;">
+									<a href="notice"><button class="btn btn-dark btn-sm">목록</button></a>
+									<br>
+								</div>
+							</div>
+						</div>
+					
+						<!-- Blog Sidebar -->
+						<div class="col-lg-4 col-md-12 sidebar-right theiaStickySidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
 
-                    <div id="bootstrap-accordion_3" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
+							<!-- Search -->
+							
+							<!-- /Search -->
 
-                                <a role="button" class="panel-title text-black" data-toggle="collapse" data-core="" href="#collapse1_3" aria-expanded="true" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-up"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Registration</h4>
-                                    </div>
+							<!-- Latest Posts -->
+							
+							<!-- /Latest Posts -->
 
-                                </a>
-                            </div>
-                            <div id="collapse1_3" class="panel-collapse noScroll collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-                                    <p class="mbr-fonts-style panel-text display-4">What's your event organization? Please note that there are people who visit your site for the first time. Provide full and precise information about Bootstrap basic template.</p>
-                                </div>
-                            </div>
-                        </div>
+							<!-- Categories -->
+							
+							<!-- /Categories -->
 
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                                <a role="button" class="panel-title text-black collapsed" data-toggle="collapse" data-core="" href="#collapse2_3" aria-expanded="false" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-down"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Volunteers</h4>
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div id="collapse2_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-
-                                    <p class="mbr-fonts-style panel-text display-4">
-                                        Say some words about your event purpose. Explain why it is important. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <a role="button" class="panel-title text-black collapsed" data-toggle="collapse" data-core="" href="#collapse3_3" aria-expanded="false" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-down"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Event Merchandise&nbsp;</h4>
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div id="collapse3_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-
-                                    <p class="mbr-fonts-style panel-text display-4">
-                                        Answer common questions about Bootstrap basic template in this section. It is very important to inform site visitors about your event organization. Provide more info about its timing and location.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                        
-
-                        
-                    </div>
+							<!-- Tags -->
+							
+							<!-- /Tags -->
+							
+						</div>
+						<!-- /Blog Sidebar -->
+						
                 </div>
-            </div>
+				</div>
 
-        </div>
+			</div>
+		
+	</div>
 
 
 
@@ -338,38 +327,38 @@ ul .bxslider {
 			</div>
 
 		</div>
-		</div>
-		</div>
-		<!-- /Footer Top -->
+	</div>
+	</div>
+	<!-- /Footer Top -->
 
-		<!-- Footer Bottom -->
-		<div class="footer-bottom"
-			style="margin: 5px !important; padding: 10px !important;">
-			<div class="container-fluid">
+	<!-- Footer Bottom -->
+	<div class="footer-bottom"
+		style="margin: 5px !important; padding: 10px !important;">
+		<div class="container-fluid">
 
-				<!-- Copyright -->
-				<div class="copyright">
-					<div class="row">
-						<div class="col-md-7 col-lg-7">
-							<div class="copyright-text">
-								<p>
-									서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 | <span
-										style="color: red">응급의료센터</span> 02-2626-1114<br /> Copyright
-									&copy; by Dr.Link All Rights Reserved.
-								</p>
-							</div>
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="row">
+					<div class="col-md-7 col-lg-7">
+						<div class="copyright-text">
+							<p>
+								서울 금천구 가산디지털2로 123 월드메르디앙2차 | 대표자 : 고현영 | <span
+									style="color: red">응급의료센터</span> 02-2626-1114<br /> Copyright
+								&copy; by Dr.Link All Rights Reserved.
+							</p>
 						</div>
-
-						<!-- /Copyright Menu -->
-
 					</div>
+
+					<!-- /Copyright Menu -->
+
 				</div>
 			</div>
-			<!-- /Copyright -->
+		</div>
+		<!-- /Copyright -->
 
-		</div>
-		</div>
-		<!-- /Footer Bottom -->
+	</div>
+	</div>
+	<!-- /Footer Bottom -->
 
 	</footer>
 	<!-- /Footer -->
