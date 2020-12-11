@@ -169,83 +169,74 @@ ul .bxslider {
 		</div>
 		<!-- /Breadcrumb -->
 		
-		<div class="row pt-3 justify-content-center">
-            <div class="col-md-10 accordion-section">
-                <div class="accordion-content">
-
-                    <div id="bootstrap-accordion_3" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingOne">
-
-                                <a role="button" class="panel-title text-black" data-toggle="collapse" data-core="" href="#collapse1_3" aria-expanded="true" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-up"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Registration</h4>
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div id="collapse1_3" class="panel-collapse noScroll collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-                                    <p class="mbr-fonts-style panel-text display-4">What's your event organization? Please note that there are people who visit your site for the first time. Provide full and precise information about Bootstrap basic template.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingTwo">
-                                <a role="button" class="panel-title text-black collapsed" data-toggle="collapse" data-core="" href="#collapse2_3" aria-expanded="false" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-down"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Volunteers</h4>
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div id="collapse2_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-
-                                    <p class="mbr-fonts-style panel-text display-4">
-                                        Say some words about your event purpose. Explain why it is important. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
-                                <a role="button" class="panel-title text-black collapsed" data-toggle="collapse" data-core="" href="#collapse3_3" aria-expanded="false" aria-controls="collapse1">
-                                    <span class="sign mbr-iconfont icon mbri-arrow-next inactive mbri-arrow-down"></span>
-                                    <div class="wrap">
-                                        <h4 class="mbr-fonts-style header-text mbr-bold display-7">Event Merchandise&nbsp;</h4>
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div id="collapse3_3" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_3" style="">
-                                <div class="panel-body p-4">
-
-                                    <p class="mbr-fonts-style panel-text display-4">
-                                        Answer common questions about Bootstrap basic template in this section. It is very important to inform site visitors about your event organization. Provide more info about its timing and location.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                        
-
-                        
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
-
-
+		<div class="container py-3">
+		    <div class="row">
+		        <div class="col-12 mx-auto">
+		            <div class="accordion" id="faqExample">
+		                <div class="card" style="margin-bottom:0px !important;">
+		                    <div class="card-header p-2" id="headingOne" >
+		                        <h5 class="mb-0">
+		                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		                              Q: How does this work?
+		                            </button>
+		                          </h5>
+		                    </div>
+		
+		                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+		                        <div class="card-body">
+		                            <b>Answer:</b> It works using the Bootstrap 4 collapse component with cards to make a vertical accordion that expands and collapses as questions are toggled.
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="card" style="margin-bottom:0px !important;">
+		                    <div class="card-header p-2" id="headingTwo">
+		                        <h5 class="mb-0">
+		                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		                          Q: What is Bootstrap 4?
+		                        </button>
+		                      </h5>
+		                    </div>
+		                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+		                        <div class="card-body">
+		                            Bootstrap is the most popular CSS framework in the world. The latest version released in 2018 is Bootstrap 4. Bootstrap can be used to quickly build responsive websites.
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="card" style="margin-bottom:0px !important;">
+		                    <div class="card-header p-2" id="headingThree">
+		                        <h5 class="mb-0">
+		                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		                              Q. What is another question?
+		                            </button>
+		                          </h5>
+		                    </div>
+		                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+		                        <div class="card-body">
+		                            The answer to the question can go here.
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="card" style="margin-bottom:0px !important;">
+		                    <div class="card-header p-2" id="headingThree">
+		                        <h5 class="mb-0">
+		                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		                              Q. What is the next question?
+		                            </button>
+		                          </h5>
+		                    </div>
+		                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+		                        <div class="card-body">
+		                            The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		
+		        </div>
+		    </div>
+		    <!--/row-->
+		</div>
+<!--container-->
 	<!-- Footer -->
 	<footer class="footer">
 
