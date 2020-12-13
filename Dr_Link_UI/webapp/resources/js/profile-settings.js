@@ -34,19 +34,19 @@ Version      : 1.0
 				'<div class="row form-row">' +
 					'<div class="col-12 col-md-6 col-lg-4">' +
 						'<div class="form-group">' +
-							'<label>Degree</label>' +
+							'<label>졸업여부</label>' +
 							'<input type="text" class="form-control">' +
 						'</div>' +
 					'</div>' +
 					'<div class="col-12 col-md-6 col-lg-4">' +
 						'<div class="form-group">' +
-							'<label>College/Institute</label>' +
+							'<label>출신대학</label>' +
 							'<input type="text" class="form-control">' +
 						'</div>' +
 					'</div>' +
 					'<div class="col-12 col-md-6 col-lg-4">' +
 						'<div class="form-group">' +
-							'<label>Year of Completion</label>' +
+							'<label>졸업년도</label>' +
 							'<input type="text" class="form-control">' +
 						'</div>' +
 					'</div>' +
