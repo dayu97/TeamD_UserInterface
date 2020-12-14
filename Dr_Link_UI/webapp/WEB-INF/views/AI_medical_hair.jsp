@@ -172,7 +172,7 @@ body {
 							
 							<div class="text-center">
 								정확한 진단을 위하여 정면에서 촬영한 사진을 업로드 해주세요. <br/>
-					           멀리서 촬영, 타투 포함, 사물 또는 눈,코,입 등이 포함된 사진으로는 정확한 AI진단이 어려울수 있습니다.
+					           멀리서 촬영, 사물 또는 눈,코,입 등이 포함된 사진으로는 정확한 AI진단이 어려울수 있습니다.
 							</div>
 							<hr/>
 							
@@ -224,29 +224,12 @@ body {
 	<div  class="card-body">
 		<div class="row">
 			<div class="col-lg-7 mb-3" style="margin-right: 30px !important;">
-				<h3>●아토피</h3>
+				<h3>●M자 탈모</h3>
 				<p class="">
-					<a
-						class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base wiki-link-internal u-btn-1"
-						href="https://namu.wiki/w/%ED%94%BC%EB%B6%80%EB%B3%91"
-						title="피부병">피부병</a>의 일종. 아토피란 말은 선천적으로 과민한
-					<a
-						class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base wiki-link-internal u-btn-2"
-						href="https://namu.wiki/w/%EC%95%8C%EB%A0%88%EB%A5%B4%EA%B8%B0"
-						title="알레르기">알레르기</a> 성질을 갖고 있다는 뜻이다. 여기에 '<a
-						class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base wiki-link-internal u-btn-3"
-						href="https://namu.wiki/w/%EC%97%BC%EC%A6%9D" title="염증">염증</a>'이
-					더해진 만성 피부 질환을 통틀어 아토피성 피부염이라 부른다. 흔히 '아토피 피부염', 더 줄여서는 그냥
-					'아토피'라고도 부른다. 쉽게 낫지 않는
-					<a
-						class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base wiki-link-internal u-btn-4"
-						href="https://namu.wiki/w/%EB%82%9C%EC%B9%98%EB%B3%91"
-						title="난치병">난치병</a>으로 실제로 한 번 이 병에 걸린 사람은 성인이 되어서도 고생하는 경우가
-					허다하다. 전염성은 없지만,
-					<a
-						class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base wiki-link-internal u-btn-5"
-						href="https://namu.wiki/w/%EB%B9%84%EC%97%BC" title="비염">비염</a>과
-					거의 동급으로 고생을 어마어마하게 한다.
+					<a class="wiki-link-internal" href="/w/%ED%83%88%EB%AA%A8" title="탈모">탈모</a>의 일종으로, 
+					이마 부분의 머리 라인이 M자가 되는 탈모를 일컫는다. 
+					<a class="wiki-link-internal" href="/w/%EC%82%BC%EC%A7%80%EC%B0%BD%EB%A8%B8%EB%A6%AC" title="삼지창머리">삼지창머리</a>
+					와는 다른 개념이나, 머리 라인이 M자가 된다는 공통점은 있다.
 				 </p>
 			</div><!-- 증상설명 -->
 			<div class="col-lg-4 mb-3">
@@ -265,16 +248,18 @@ body {
 	
 		<div class="row">
 			<div class="col-lg-7 mb-3" style="margin-right: 30px !important;">
-				<h3>●콜린성 두드러기</h3>
+				<h3>●원형탈모</h3>
 				<p class="u-text u-text-8">
-					상대적으로 체온이 높아질 때 나는 <a class="wiki-link-internal" href="/w/%EB%91%90%EB%93%9C%EB%9F%AC%EA%B8%B0" title="두드러기">두드러기</a>.
-					콜린성 <a class="wiki-link-internal" href="/w/%EC%95%8C%EB%9F%AC%EC%A7%80" title="알러지">알러지</a>라
-					하는 경우도 있으나 항원이 없으니 엄밀히는 틀린 말이다. 땀은 몸의 체온이 올랐을 경우 이를 내려주는 냉각액의
-					역할을 하는데, 선천적으로 땀이 잘 나지 않거나 땀으로 배출될 수 있는 수분의 양이 체내에 부족한 경우, 피부
-					내 온도가 상승하면서 열이 비만세포를 자극해 따끔거림과 가려움을 동반하는 현상이다. 대부분의 경우 습한
-					여름에는 증상이 없다가 건조한 가을~겨울 쯤(추워지는 때)에 나타난다. 발병 원인은 확실치
-					않다.
+				<b>원형 탈모증</b>은 몸의 일부 또는 모든 부위에 털이 빠지는 질환이다. 
+				흔히 두피에 몇 개의 대머리 반점이 생기는데, 각각 동전 크기 정도 된다. 
+				심리적 스트레스에 의해 발생할 수 있으며 두피에 있는 털이나 전신 털이 모두 없어져 영구적으로 탈모가 되는 경우도 있다.
+				원형 탈모증은 모낭에 균열이 생긴 자가면역질환으로 여겨진다. 위험인자에는 가족력이 포함된다. 일란성 쌍둥이가 영향을 받으면 다른 쌍둥이도 영향을 받을 확률이 약 50%이다.
+				기초적인 메커니즘은 모낭의 면역 매개 파괴로 몸이 자신의 세포를 인식하지 못하는 것을 포함한다. 
+				아직 뚜렷하게 밝혀진 치료법은 없으며 코티손 주입과 같은 모발 재생을 가속화하는 방법은 사용할 수 있다. 
+				또한 선스크린, 추위와 햇빛로부터 보호하기 위한 헤드커버, 속눈썹이 빠진 경우 안경 등이 추천된다. 
+				심한 경우 머리카락이 퇴보하여 재발하지 않는 경우도 있다. 체모가 모두 빠진 사람 중 회복되는 사람은 10% 미만이다.
 				</p>
+					
 			</div><!-- 증상설명 -->
 			<div class="col-lg-4 mb-3">
 				<div class="text-center" style="width:80% !important;" >
